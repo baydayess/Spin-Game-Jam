@@ -171,7 +171,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &12975648
 MonoBehaviour:
@@ -240,7 +240,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &39546871
 MonoBehaviour:
@@ -309,7 +309,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &125091767
 MonoBehaviour:
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 203470505}
   - component: {fileID: 203470510}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -460,12 +460,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203470504}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.49, y: 13.75, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -17.960491, y: 0.20209026, z: 1.37105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1006728168}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &203470510
 MonoBehaviour:
@@ -480,6 +480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   gravity: {x: 0, y: -20, z: 0}
+  finished: 0
 --- !u!1 &214412243
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,7 +645,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &242312524
 MonoBehaviour:
@@ -713,7 +714,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &314531709
 MonoBehaviour:
@@ -1118,7 +1119,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &425248158
 MonoBehaviour:
@@ -1135,6 +1136,53 @@ MonoBehaviour:
   color: 1
   number: 11
   roulette: {fileID: 535405011}
+--- !u!1 &469104359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469104360}
+  - component: {fileID: 469104361}
+  m_Layer: 0
+  m_Name: RouletteManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &469104360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469104359}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.51248, y: 1.44283, z: 10.10221}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &469104361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469104359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c75b6dc4d611b479315d3d89667533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RouletteManager
+  roulette_Stoped:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &485983675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,7 +1347,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &525400865
 MonoBehaviour:
@@ -1314,7 +1362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
-  number: 12
+  number: 13
   roulette: {fileID: 535405011}
 --- !u!1 &535405011
 GameObject:
@@ -1389,6 +1437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpinTest
   speed: 500
+  rouletteManager: {fileID: 469104361}
 --- !u!64 &535405015
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1523,7 +1572,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &561926850
 MonoBehaviour:
@@ -1592,7 +1641,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &577665201
 MonoBehaviour:
@@ -1773,7 +1822,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &657463946
 MonoBehaviour:
@@ -2066,7 +2115,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &827668277
 MonoBehaviour:
@@ -2262,7 +2311,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &918746558
 MonoBehaviour:
@@ -2331,7 +2380,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &955679708
 MonoBehaviour:
@@ -2561,7 +2610,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &992187786
 MonoBehaviour:
@@ -2578,6 +2627,38 @@ MonoBehaviour:
   color: 1
   number: 12
   roulette: {fileID: 535405011}
+--- !u!1 &1006728167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1006728168}
+  m_Layer: 0
+  m_Name: Balls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1006728168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006728167}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.47049, y: 13.54791, z: -1.37105}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 203470509}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1019436529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,7 +2711,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &1019436532
 MonoBehaviour:
@@ -2699,7 +2780,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &1042197093
 MonoBehaviour:
@@ -2880,7 +2961,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &1078619703
 MonoBehaviour:
@@ -2949,7 +3030,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &1081838234
 MonoBehaviour:
@@ -3018,7 +3099,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &1139706221
 MonoBehaviour:
@@ -3311,7 +3392,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &1230143587
 MonoBehaviour:
@@ -3380,7 +3461,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &1400743274
 MonoBehaviour:
@@ -3561,7 +3642,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &1517973208
 MonoBehaviour:
@@ -4078,7 +4159,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &1740132552
 MonoBehaviour:
@@ -4147,7 +4228,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &1827195373
 MonoBehaviour:
@@ -4628,7 +4709,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0038444314, y: 0.003420874, z: 0.0054706954}
+  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
   m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!114 &2121988217
 MonoBehaviour:
@@ -4765,5 +4846,6 @@ SceneRoots:
   - {fileID: 859931477}
   - {fileID: 2006021004}
   - {fileID: 1977280927}
-  - {fileID: 203470509}
   - {fileID: 535405012}
+  - {fileID: 469104360}
+  - {fileID: 1006728168}

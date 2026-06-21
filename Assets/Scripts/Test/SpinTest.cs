@@ -5,6 +5,11 @@ public class SpinTest : MonoBehaviour
     Rigidbody rb;
 
     [SerializeField]private float speed = 10;
+    
+    [SerializeField]private RouletteManager rouletteManager;
+
+    private bool stoped = false;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,6 +35,11 @@ public class SpinTest : MonoBehaviour
         else
         {
             speed = 0;
+            if (!stoped && rouletteManager)
+            {
+                rouletteManager.roulette_Stoped.Invoke();
+                stoped = true;
+            }
         }
     }
 }

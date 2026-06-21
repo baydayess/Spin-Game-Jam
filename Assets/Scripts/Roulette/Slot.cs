@@ -10,7 +10,7 @@ public class Slot : MonoBehaviour
         green
     }
     
-    [SerializeField] private Slot_Color color;
+    [SerializeField] private ESlotColor color;
 
     [SerializeField] private int number;
     
