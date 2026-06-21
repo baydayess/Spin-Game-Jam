@@ -14,22 +14,22 @@ public class SpinTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Vector3 rotation = transform.eulerAngles;
-        // rotation.y += 200f * Time.deltaTime;
-        // transform.eulerAngles = rotation;
+        Vector3 rotation = transform.eulerAngles;
+        rotation.y += speed * Time.deltaTime;
+        transform.eulerAngles = rotation;
     }
 
     void FixedUpdate()
     {
-        rb.angularVelocity = Vector3.up * speed;
-        if (speed >= 0)
+        if (speed > 0)
         {
-            speed -= Time.fixedDeltaTime;
+            speed -= Time.fixedDeltaTime * 50;
+            //rb.angularVelocity = Vector3.up * speed;
+        
         }
         else
         {
             speed = 0;
         }
-        //rb.MoveRotation(rb.rotation * Quaternion.Euler(0, 200 * Time.fixedDeltaTime, 0));
     }
 }
