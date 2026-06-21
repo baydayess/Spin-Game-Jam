@@ -4,7 +4,7 @@ public class SpinTest : MonoBehaviour
 {
     Rigidbody rb;
 
-    [SerializeField ]private float speed = 10;
+    [SerializeField]private float speed = 10;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
