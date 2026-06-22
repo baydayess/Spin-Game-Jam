@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour
+public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
 {
     public static T Instance;
 
@@ -8,8 +8,7 @@ public class Singleton<T> : MonoBehaviour
     {
         if(Instance == null)
         {
-            //T t = this as T;
-            //Instance = t;
+            Instance = this as T;
         }
         else
         {
