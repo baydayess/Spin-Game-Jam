@@ -1,16 +1,38 @@
+using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public enum EGameState
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    MainMenu,
+    Pause,
+    Gameplay
+}
+
+public enum EGamePlayState
+{
+    BetScreen,
+    Roulette,
+    Shop
+}
+
+public class GameManager : Singleton<GameManager>
+{
+    private void Start()
     {
-        
+        StartCoroutine(WaitToChangeCamera());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator WaitToChangeCamera()
     {
-        
+        while (true) 
+        {
+            yield return new WaitForSeconds(3);
+            CameraState.Instance.ChangeCameraDirection(EGamePlayState.Shop);
+            yield return new WaitForSeconds(3);
+            CameraState.Instance.ChangeCameraDirection(EGamePlayState.BetScreen);
+            yield return new WaitForSeconds(3);
+            CameraState.Instance.ChangeCameraDirection(EGamePlayState.Roulette);
+        }
     }
 }
