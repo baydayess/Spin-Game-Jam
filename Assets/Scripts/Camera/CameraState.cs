@@ -6,6 +6,11 @@ public class CameraState : Singleton<CameraState>
 {
     [SerializeField] private Animator anim;
 
+    private void Start()
+    {
+        GameManager.Instance.OnGamePlayStateChanged.AddListener(ChangeCameraDirection);
+    }
+
     public void ChangeCameraDirection(EGamePlayState state)
     {
         switch (state)
