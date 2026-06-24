@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cda258607bcb4c45a9009abe109832c, type: 3}
   m_Name: EvenMoreBalls
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  <Sprite>k__BackingField: {fileID: 0}
-  <Price>k__BackingField: 100
+  <Sprite>k__BackingField: {fileID: 21300000, guid: ef34172d0954edb48ab25e47e43ce48d, type: 3}
+  <SpriteOutline>k__BackingField: {fileID: 21300000, guid: 6f3cfc6b06610ba46bd85ddb247666e7, type: 3}
+  <Price>k__BackingField: 99.99
   <ExtraBalls>k__BackingField: 6
   <BlackBonusPercentage>k__BackingField: 0
   <RedBonusPercentage>k__BackingField: 0

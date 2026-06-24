@@ -25,11 +25,18 @@ public class GameManager : Singleton<GameManager>
     [field: SerializeField] public EGamePlayState GamePlayState { get; private set; }
     private EGamePlayState prevGamePlayState;
 
+    [SerializeField] private GameObject seeRouletteButton;
+    [SerializeField] private GameObject checkShopButton;
+    [SerializeField] private GameObject goToBetScreenButton;
+
     public UnityEvent<EGamePlayState> OnGamePlayStateChanged { get; set; } = new UnityEvent<EGamePlayState>();
     public UnityEvent<EGameState> OnGameStateChanged { get; set; } = new UnityEvent<EGameState>();
 
     private void Start()
     {
+        goToBetScreenButton.SetActive(false);
+        seeRouletteButton.SetActive(false);
+
         prevGamePlayState = GamePlayState;
         prevGameState = GameState;
         OnGamePlayStateChanged.AddListener(GamePlayStateChanged);
@@ -57,10 +64,16 @@ public class GameManager : Singleton<GameManager>
         {
             case EGamePlayState.BetScreen:
                 Shop.Instance.CloseShop();
+                goToBetScreenButton.SetActive(false);
+                seeRouletteButton.SetActive(true);
                 break;
             case EGamePlayState.Roulette:
+                seeRouletteButton.SetActive(false);
+                checkShopButton.SetActive(true);
                 break;
             case EGamePlayState.Shop:
+                checkShopButton.SetActive(false);
+                goToBetScreenButton.SetActive(true);
                 Shop.Instance.OpenShop();
                 break;
         }
@@ -77,5 +90,10 @@ public class GameManager : Singleton<GameManager>
             case EGameState.Pause:
                 break;
         }
+    }
+    
+    public void ChangeGamePlayState(int state)
+    {
+        GamePlayState = (EGamePlayState) state;
     }
 }
