@@ -2,26 +2,26 @@ using UnityEngine;
 
 public class SpinTest : MonoBehaviour
 {
-    Rigidbody rb;
+    private Rigidbody[] rbs;
 
-    [SerializeField]private float speed = 10;
+    [SerializeField] private float speed = 10;
     
-    [SerializeField]private RouletteManager rouletteManager;
+    [SerializeField] private RouletteManager rouletteManager;
 
     private bool stoped = false;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rbs = GetComponentsInChildren<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 rotation = transform.eulerAngles;
-        rotation.y += speed * Time.deltaTime;
-        transform.eulerAngles = rotation;
+        //Vector3 rotation = transform.eulerAngles;
+        //rotation.y += speed * Time.deltaTime;
+        //transform.eulerAngles = rotation;
     }
 
     void FixedUpdate()
@@ -29,8 +29,10 @@ public class SpinTest : MonoBehaviour
         if (speed > 0)
         {
             speed -= Time.fixedDeltaTime * 50;
-            //rb.angularVelocity = Vector3.up * speed;
-        
+            Quaternion deltaRotation = Quaternion.Euler(0f, 0f, speed * Time.fixedDeltaTime);
+
+            foreach (Rigidbody rb in rbs)
+                rb.MoveRotation(rb.rotation * deltaRotation);
         }
         else
         {

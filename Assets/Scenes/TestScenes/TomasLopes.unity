@@ -119,75 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1601684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1601685}
-  - component: {fileID: 1601687}
-  - component: {fileID: 1601686}
-  m_Layer: 0
-  m_Name: Slot13
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1601685
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601684}
-  serializedVersion: 2
-  m_LocalRotation: {x: -1.1641532e-10, y: 0.6696734, z: 1.1641532e-10, w: 0.7426558}
-  m_LocalPosition: {x: -0.0193, y: 0.00274, z: -0.00254}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 84.084, z: 0}
---- !u!114 &1601686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 13
-  roulette: {fileID: 622622826}
---- !u!65 &1601687
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601684}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &22868716
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,282 +231,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22868716}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &57733139
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 57733140}
-  - component: {fileID: 57733142}
-  - component: {fileID: 57733141}
-  m_Layer: 0
-  m_Name: Slot20
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &57733140
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57733139}
-  serializedVersion: 2
-  m_LocalRotation: {x: -4.656613e-10, y: 0.89611936, z: -0, w: 0.44381312}
-  m_LocalPosition: {x: -0.01572177, y: 0.0027399997, z: 0.0113056665}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 127.305, z: 0}
---- !u!114 &57733141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57733139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 20
-  roulette: {fileID: 622622826}
---- !u!65 &57733142
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57733139}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &82639084
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 82639085}
-  - component: {fileID: 82639087}
-  - component: {fileID: 82639086}
-  m_Layer: 0
-  m_Name: Slot9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &82639085
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82639084}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.024283577, y: 0.54813373, z: -0.033847973, w: 0.83535266}
-  m_LocalPosition: {x: -0.0181, y: 0.0023, z: -0.0073}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: -0.198, y: 66.552, z: -4.771}
---- !u!114 &82639086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82639084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 9
-  roulette: {fileID: 622622826}
---- !u!65 &82639087
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82639084}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &102478980
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 102478981}
-  - component: {fileID: 102478983}
-  - component: {fileID: 102478982}
-  m_Layer: 0
-  m_Name: Slot11
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &102478981
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102478980}
-  serializedVersion: 2
-  m_LocalRotation: {x: -4.6566134e-10, y: 0.9411811, z: -0, w: 0.33790243}
-  m_LocalPosition: {x: -0.01254, y: 0.00274, z: 0.01481}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 140.502, z: 0}
---- !u!114 &102478982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102478980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 11
-  roulette: {fileID: 622622826}
---- !u!65 &102478983
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102478980}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &123220768
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 123220769}
-  - component: {fileID: 123220771}
-  - component: {fileID: 123220770}
-  m_Layer: 0
-  m_Name: Slot4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &123220769
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123220768}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.5198449, z: 2.3283064e-10, w: -0.85426074}
-  m_LocalPosition: {x: 0.01716, y: 0.00274, z: -0.00908}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 297.356, z: 0}
---- !u!114 &123220770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123220768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 4
-  roulette: {fileID: 622622826}
---- !u!65 &123220771
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123220768}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &138899966
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,13 +363,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138899966}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.3007059, z: -0, w: -0.953717}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: 0, y: 27, z: -13.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 325, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!114 &138899971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -750,6 +405,161 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &143246065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143246066}
+  - component: {fileID: 143246071}
+  - component: {fileID: 143246070}
+  - component: {fileID: 143246069}
+  - component: {fileID: 143246068}
+  - component: {fileID: 143246067}
+  m_Layer: 0
+  m_Name: Cylinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &143246066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143246065}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.1, y: 10.91, z: -3.33}
+  m_LocalScale: {x: 20.001, y: 0.20007826, z: 20.026}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2098896956}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &143246067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143246065}
+  m_Material: {fileID: 13400000, guid: 706c53bb393ea504f8a9472412ef262a, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.9999999, z: 1.0000001}
+  m_Center: {x: 0.000000059604645, y: -0.0000076293945, z: -0.0000000745058}
+--- !u!54 &143246068
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143246065}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 94
+  m_CollisionDetection: 0
+--- !u!114 &143246069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143246065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8c55b4859923a468a5476ee0c3a4f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpinTest
+  speed: 200
+  rouletteManager: {fileID: 815062539}
+--- !u!23 &143246070
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143246065}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &143246071
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143246065}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &174749272
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,7 +767,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239824900}
   serializedVersion: 5
-  m_Mass: 0.1
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1054,75 +864,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239824900}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &253376640
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 253376641}
-  - component: {fileID: 253376643}
-  - component: {fileID: 253376642}
-  m_Layer: 0
-  m_Name: Slot5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &253376641
+--- !u!4 &324541084 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+  m_PrefabInstance: {fileID: 7138409878507867493}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253376640}
-  serializedVersion: 2
-  m_LocalRotation: {x: -4.6566123e-10, y: 0.21158461, z: -0, w: 0.97735965}
-  m_LocalPosition: {x: -0.008036172, y: 0.0020199993, z: -0.017257057}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 24.43, z: 0}
---- !u!114 &253376642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253376640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 5
-  roulette: {fileID: 622622826}
---- !u!65 &253376643
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253376640}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &333266365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,75 +1041,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353230903}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &373663163
+--- !u!1 &385553224 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1552034491783783330, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+  m_PrefabInstance: {fileID: 7138409878507867493}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 373663164}
-  - component: {fileID: 373663166}
-  - component: {fileID: 373663165}
-  m_Layer: 0
-  m_Name: Slot18
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &373663164
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373663163}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9213268, z: -2.3283067e-10, w: -0.38878903}
-  m_LocalPosition: {x: 0.01379, y: 0.00274, z: 0.01325}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 225.758, z: 0}
---- !u!114 &373663165
+--- !u!114 &385553227
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373663163}
+  m_GameObject: {fileID: 385553224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
+  m_Script: {fileID: 11500000, guid: ff8c55b4859923a468a5476ee0c3a4f0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 18
-  roulette: {fileID: 622622826}
---- !u!65 &373663166
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373663163}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
+  m_EditorClassIdentifier: Assembly-CSharp::SpinTest
+  speed: 400
+  rouletteManager: {fileID: 815062539}
 --- !u!1 &404949425
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,7 +1376,7 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &442695613
+--- !u!1 &447476750
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1688,53 +1384,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 442695614}
-  - component: {fileID: 442695616}
-  - component: {fileID: 442695615}
+  - component: {fileID: 447476751}
+  - component: {fileID: 447476754}
+  - component: {fileID: 447476753}
+  - component: {fileID: 447476752}
   m_Layer: 0
-  m_Name: Slot10
+  m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &442695614
+--- !u!4 &447476751
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442695613}
+  m_GameObject: {fileID: 447476750}
   serializedVersion: 2
-  m_LocalRotation: {x: 1.1641532e-10, y: 0.8589818, z: -2.3283064e-10, w: -0.5120063}
-  m_LocalPosition: {x: 0.01693105, y: 0.0027399997, z: 0.009685576}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.7964, y: -0.0966, z: -1.705}
+  m_LocalScale: {x: 48.4908, y: 15.953224, z: 28.90554}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 241.595, z: 0}
---- !u!114 &442695615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442695613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 10
-  roulette: {fileID: 622622826}
---- !u!65 &442695616
+  m_Father: {fileID: 2098896956}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &447476752
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442695613}
+  m_GameObject: {fileID: 447476750}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1743,81 +1425,69 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &452763272
-GameObject:
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &447476753
+MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 452763273}
-  - component: {fileID: 452763275}
-  - component: {fileID: 452763274}
-  m_Layer: 0
-  m_Name: Slot7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &452763273
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452763272}
-  serializedVersion: 2
-  m_LocalRotation: {x: -4.0745368e-10, y: 0.9766186, z: -0, w: 0.21497953}
-  m_LocalPosition: {x: -0.00833, y: 0.00274, z: 0.01738}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 155.171, z: 0}
---- !u!114 &452763274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452763272}
+  m_GameObject: {fileID: 447476750}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 7
-  roulette: {fileID: 622622826}
---- !u!65 &452763275
-BoxCollider:
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &447476754
+MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452763272}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
+  m_GameObject: {fileID: 447476750}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &475275514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,300 +2077,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603002884}
   m_CullTransparentMesh: 1
---- !u!1 &621445660
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 621445661}
-  - component: {fileID: 621445663}
-  - component: {fileID: 621445662}
-  m_Layer: 0
-  m_Name: Slot24
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &621445661
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621445660}
-  serializedVersion: 2
-  m_LocalRotation: {x: -5.8207666e-10, y: 0.82437843, z: -0, w: 0.56603914}
-  m_LocalPosition: {x: -0.01815296, y: 0.0027399985, z: 0.0071178535}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 111.051, z: 0}
---- !u!114 &621445662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621445660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 24
-  roulette: {fileID: 622622826}
---- !u!65 &621445663
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621445660}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &622622826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 622622827}
-  - component: {fileID: 622622831}
-  - component: {fileID: 622622830}
-  - component: {fileID: 622622829}
-  - component: {fileID: 622622828}
-  m_Layer: 0
-  m_Name: Roulette
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &622622827
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622622826}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.0023782838, y: -0.0011684839, z: -0.00010799942, w: 0.9999965}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 311.08044, y: 311.0808, z: 311.08063}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1825737240}
-  - {fileID: 253376641}
-  - {fileID: 1288011101}
-  - {fileID: 1971818512}
-  - {fileID: 82639085}
-  - {fileID: 1601685}
-  - {fileID: 1534873836}
-  - {fileID: 621445661}
-  - {fileID: 57733140}
-  - {fileID: 102478981}
-  - {fileID: 452763273}
-  - {fileID: 1961510624}
-  - {fileID: 1329158911}
-  - {fileID: 1110166034}
-  - {fileID: 915086965}
-  - {fileID: 373663164}
-  - {fileID: 442695614}
-  - {fileID: 1558517299}
-  - {fileID: 642828225}
-  - {fileID: 1564090921}
-  - {fileID: 123220769}
-  - {fileID: 773491363}
-  - {fileID: 954756897}
-  - {fileID: 1836509659}
-  - {fileID: 919856919}
-  m_Father: {fileID: 2098896956}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &622622828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622622826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8c55b4859923a468a5476ee0c3a4f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpinTest
-  speed: 500
-  rouletteManager: {fileID: 815062539}
---- !u!64 &622622829
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622622826}
-  m_Material: {fileID: 13400000, guid: 706c53bb393ea504f8a9472412ef262a, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 64
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5076798556035486163, guid: 9bad921fae6d7b448a03a2a22d97dfc0, type: 3}
---- !u!23 &622622830
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622622826}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 6034957751646507721, guid: 9bad921fae6d7b448a03a2a22d97dfc0, type: 3}
-  - {fileID: 6271573414225017425, guid: 9bad921fae6d7b448a03a2a22d97dfc0, type: 3}
-  - {fileID: -1294284738371021749, guid: 9bad921fae6d7b448a03a2a22d97dfc0, type: 3}
-  - {fileID: 1108147716743453759, guid: 9bad921fae6d7b448a03a2a22d97dfc0, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &622622831
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622622826}
-  m_Mesh: {fileID: -5076798556035486163, guid: 9bad921fae6d7b448a03a2a22d97dfc0, type: 3}
---- !u!1 &642828224
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 642828225}
-  - component: {fileID: 642828227}
-  - component: {fileID: 642828226}
-  m_Layer: 0
-  m_Name: Slot15
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &642828225
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642828224}
-  serializedVersion: 2
-  m_LocalRotation: {x: 1.1641531e-10, y: 0.7111422, z: -2.3283062e-10, w: -0.7030483}
-  m_LocalPosition: {x: 0.01961, y: 0.00274, z: 0.0003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 269.344, z: 0}
---- !u!114 &642828226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642828224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 15
-  roulette: {fileID: 622622826}
---- !u!65 &642828227
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642828224}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &744061838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2780,75 +2156,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &773491362
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 773491363}
-  - component: {fileID: 773491365}
-  - component: {fileID: 773491364}
-  m_Layer: 0
-  m_Name: Slot8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &773491363
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773491362}
-  serializedVersion: 2
-  m_LocalRotation: {x: -2.3283064e-10, y: 0.39464247, z: 1.1641532e-10, w: -0.91883475}
-  m_LocalPosition: {x: 0.01426, y: 0.00274, z: -0.0132}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 313.513, z: 0}
---- !u!114 &773491364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773491362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 8
-  roulette: {fileID: 622622826}
---- !u!65 &773491365
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773491362}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &775757630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,53 +2301,22 @@ Transform:
   - {fileID: 433489645}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -35, z: 0}
---- !u!1 &815062537
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 815062538}
-  - component: {fileID: 815062539}
-  m_Layer: 0
-  m_Name: RouletteManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &815062538
+--- !u!4 &815062538 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+  m_PrefabInstance: {fileID: 3745031466799869601}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815062537}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5327148, y: -7.02717, z: 11.489031}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2098896956}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &815062539
+--- !u!114 &815062539 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2234427752214341966, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+  m_PrefabInstance: {fileID: 3745031466799869601}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815062537}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72c75b6dc4d611b479315d3d89667533, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RouletteManager
-  roulette_Stoped:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &820238334
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,213 +2420,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &915086964
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 915086965}
-  - component: {fileID: 915086967}
-  - component: {fileID: 915086966}
-  m_Layer: 0
-  m_Name: Slot22
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &915086965
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915086964}
-  serializedVersion: 2
-  m_LocalRotation: {x: -1.74623e-10, y: 0.9630116, z: -0, w: -0.26945996}
-  m_LocalPosition: {x: 0.01017, y: 0.00274, z: 0.01637}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 211.264, z: 0}
---- !u!114 &915086966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915086964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 22
-  roulette: {fileID: 622622826}
---- !u!65 &915086967
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915086964}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &919856918
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 919856919}
-  - component: {fileID: 919856921}
-  - component: {fileID: 919856920}
-  m_Layer: 0
-  m_Name: Slot1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &919856919
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919856918}
-  serializedVersion: 2
-  m_LocalRotation: {x: -6.98492e-10, y: 0.03167565, z: -1.236913e-10, w: -0.99949825}
-  m_LocalPosition: {x: 0.0016, y: 0.00274, z: -0.01935}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 356.37, z: 0}
---- !u!114 &919856920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919856918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 1
-  roulette: {fileID: 622622826}
---- !u!65 &919856921
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919856918}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &954756896
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 954756897}
-  - component: {fileID: 954756899}
-  - component: {fileID: 954756898}
-  m_Layer: 0
-  m_Name: Slot16
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &954756897
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954756896}
-  serializedVersion: 2
-  m_LocalRotation: {x: -4.6566134e-10, y: 0.27499717, z: -0, w: -0.96144503}
-  m_LocalPosition: {x: 0.01066, y: 0.00274, z: -0.01638}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 328.076, z: 0}
---- !u!114 &954756898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954756896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 16
-  roulette: {fileID: 622622826}
---- !u!65 &954756899
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954756896}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &984571726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3831,75 +2900,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056586805}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1110166033
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1110166034}
-  - component: {fileID: 1110166036}
-  - component: {fileID: 1110166035}
-  m_Layer: 0
-  m_Name: Slot6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1110166034
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110166033}
-  serializedVersion: 2
-  m_LocalRotation: {x: -2.910383e-10, y: 0.98584557, z: -4.656613e-10, w: -0.16765603}
-  m_LocalPosition: {x: 0.00596, y: 0.00274, z: 0.01862}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 199.303, z: 0}
---- !u!114 &1110166035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110166033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 6
-  roulette: {fileID: 622622826}
---- !u!65 &1110166036
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110166033}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &1112854024
 GameObject:
   m_ObjectHideFlags: 0
@@ -4408,144 +3408,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 134b9c39fa0fe7948bca5bc4281b595a, type: 3}
   m_PrefabInstance: {fileID: 1236906824}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1288011100
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1288011101}
-  - component: {fileID: 1288011103}
-  - component: {fileID: 1288011102}
-  m_Layer: 0
-  m_Name: Slot21
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1288011101
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288011100}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.004650534, y: 0.33861533, z: -0.010419646, w: 0.9408558}
-  m_LocalPosition: {x: -0.012128913, y: 0.0020157576, z: -0.014942518}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: -0.097, y: 39.589, z: -1.304}
---- !u!114 &1288011102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288011100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 21
-  roulette: {fileID: 622622826}
---- !u!65 &1288011103
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288011100}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &1329158910
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1329158911}
-  - component: {fileID: 1329158913}
-  - component: {fileID: 1329158912}
-  m_Layer: 0
-  m_Name: Slot3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1329158911
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329158910}
-  serializedVersion: 2
-  m_LocalRotation: {x: -3.4924597e-10, y: 0.9997108, z: 2.3283064e-10, w: -0.024049032}
-  m_LocalPosition: {x: 0.00089, y: 0.00274, z: 0.01972}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 182.756, z: 0}
---- !u!114 &1329158912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329158910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 3
-  roulette: {fileID: 622622826}
---- !u!65 &1329158913
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1329158910}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &1330347912
 GameObject:
   m_ObjectHideFlags: 0
@@ -4704,8 +3566,8 @@ Transform:
   m_GameObject: {fileID: 1337812518}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9113464, y: 16.347057, z: -12.438829}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.58, y: 59.600002, z: -13.86}
+  m_LocalScale: {x: 0.83, y: 3.1727, z: 0.83}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1649762011}
@@ -5113,7 +3975,7 @@ Light:
   serializedVersion: 12
   m_Type: 2
   m_Color: {r: 1, g: 0.6628425, b: 0, a: 1}
-  m_Intensity: 726.1
+  m_Intensity: 267.64
   m_Range: 55.49
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5175,13 +4037,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502783905}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -0.020233154, y: 14.657058, z: -1.135828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.06, y: 14.657058, z: -3.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2098896956}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1514423002
 GameObject:
   m_ObjectHideFlags: 0
@@ -5283,213 +4145,6 @@ MonoBehaviour:
   currentShopItems: []
   currentShopItemButtons: []
   <IsShopOpen>k__BackingField: 0
---- !u!1 &1534873835
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1534873836}
-  - component: {fileID: 1534873838}
-  - component: {fileID: 1534873837}
-  m_Layer: 0
-  m_Name: Slot17
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1534873836
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534873835}
-  serializedVersion: 2
-  m_LocalRotation: {x: -2.3283067e-10, y: 0.75134903, z: -0, w: 0.6599051}
-  m_LocalPosition: {x: -0.01947454, y: 0.002739998, z: 0.002282105}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 97.415, z: 0}
---- !u!114 &1534873837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534873835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 0
-  number: 17
-  roulette: {fileID: 622622826}
---- !u!65 &1534873838
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534873835}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &1558517298
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1558517299}
-  - component: {fileID: 1558517301}
-  - component: {fileID: 1558517300}
-  m_Layer: 0
-  m_Name: Slot2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1558517299
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558517298}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.79837364, z: -3.4924594e-10, w: -0.6021623}
-  m_LocalPosition: {x: 0.01889, y: 0.00274, z: 0.00513}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 254.05, z: 0}
---- !u!114 &1558517300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558517298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 2
-  roulette: {fileID: 622622826}
---- !u!65 &1558517301
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558517298}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &1564090920
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1564090921}
-  - component: {fileID: 1564090923}
-  - component: {fileID: 1564090922}
-  m_Layer: 0
-  m_Name: Slot19
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1564090921
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564090920}
-  serializedVersion: 2
-  m_LocalRotation: {x: 1.1641532e-10, y: 0.6163223, z: -2.3283064e-10, w: -0.7874941}
-  m_LocalPosition: {x: 0.01905, y: 0.00274, z: -0.00474}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 283.904, z: 0}
---- !u!114 &1564090922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564090920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 19
-  roulette: {fileID: 622622826}
---- !u!65 &1564090923
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564090920}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &1649762010
 GameObject:
   m_ObjectHideFlags: 0
@@ -6212,75 +4867,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801132053}
   m_CullTransparentMesh: 1
---- !u!1 &1825737239
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1825737240}
-  - component: {fileID: 1825737242}
-  - component: {fileID: 1825737241}
-  m_Layer: 0
-  m_Name: Slot12
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1825737240
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825737239}
-  serializedVersion: 2
-  m_LocalRotation: {x: -2.3283067e-10, y: 0.0975848, z: -2.9103834e-11, w: 0.9952272}
-  m_LocalPosition: {x: -0.00346, y: 0.00202, z: -0.01906}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 11.2, z: 0}
---- !u!114 &1825737241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825737239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 12
-  roulette: {fileID: 622622826}
---- !u!65 &1825737242
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825737239}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &1829107864
 GameObject:
   m_ObjectHideFlags: 0
@@ -6408,75 +4994,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -92, y: 0, z: 0}
---- !u!1 &1836509658
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1836509659}
-  - component: {fileID: 1836509661}
-  - component: {fileID: 1836509660}
-  m_Layer: 0
-  m_Name: Slot23
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1836509659
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836509658}
-  serializedVersion: 2
-  m_LocalRotation: {x: -6.984919e-10, y: 0.1337885, z: -1.1641531e-10, w: -0.99100995}
-  m_LocalPosition: {x: 0.00622, y: 0.00274, z: -0.01826}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 344.623, z: 0}
---- !u!114 &1836509660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836509658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 23
-  roulette: {fileID: 622622826}
---- !u!65 &1836509661
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836509658}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &1856532632
 GameObject:
   m_ObjectHideFlags: 0
@@ -6828,144 +5345,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 217062237}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &1961510623
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1961510624}
-  - component: {fileID: 1961510626}
-  - component: {fileID: 1961510625}
-  m_Layer: 0
-  m_Name: Slot14
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1961510624
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961510623}
-  serializedVersion: 2
-  m_LocalRotation: {x: -3.7834982e-10, y: 0.9952304, z: 2.3283067e-10, w: 0.09755287}
-  m_LocalPosition: {x: -0.00387, y: 0.00274, z: 0.01948}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0, y: 168.803, z: 0}
---- !u!114 &1961510625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961510623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 1
-  number: 14
-  roulette: {fileID: 622622826}
---- !u!65 &1961510626
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961510623}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
---- !u!1 &1971818511
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1971818512}
-  - component: {fileID: 1971818514}
-  - component: {fileID: 1971818513}
-  m_Layer: 0
-  m_Name: Slot0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1971818512
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971818511}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.008167726, y: 0.46407738, z: -0.016270904, w: 0.8856076}
-  m_LocalPosition: {x: -0.015617323, y: 0.0021278206, z: -0.011426864}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 622622827}
-  m_LocalEulerAnglesHint: {x: 0.036, y: 55.31, z: -2.086}
---- !u!114 &1971818513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971818511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f759e9020b889343a524fdc4f4a6b5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Slot
-  color: 2
-  number: 0
-  roulette: {fileID: 622622826}
---- !u!65 &1971818514
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971818511}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002, y: 0.0034, z: 0.005}
-  m_Center: {x: -0.00020575032, y: -0.0003230838, z: -0.00031145778}
 --- !u!1 &2000453431
 GameObject:
   m_ObjectHideFlags: 0
@@ -7353,11 +5732,13 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1502783908}
-  - {fileID: 1337812519}
-  - {fileID: 622622827}
-  - {fileID: 815062538}
   - {fileID: 239824901}
+  - {fileID: 447476751}
   - {fileID: 412345850}
+  - {fileID: 815062538}
+  - {fileID: 143246066}
+  - {fileID: 1337812519}
+  - {fileID: 324541084}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2123259678
@@ -7472,6 +5853,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123259678}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &3745031466799869601
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2098896956}
+    m_Modifications:
+    - target: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5327148
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.02717
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.489031
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675170571537174478, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628622632462756431, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
+      propertyPath: m_Name
+      value: RouletteManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8545caeec1bce6a4e9bbeb7f081685a4, type: 3}
 --- !u!1001 &6583084548779394668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7541,6 +5979,200 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7aeed954f7667aa41a7790a44fa704eb, type: 3}
+--- !u!1001 &7138409878507867493
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2098896956}
+    m_Modifications:
+    - target: {fileID: 732278822088154096, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 706c53bb393ea504f8a9472412ef262a, type: 2}
+    - target: {fileID: 1973654609047701167, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 706c53bb393ea504f8a9472412ef262a, type: 2}
+    - target: {fileID: 2170804809387143986, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 706c53bb393ea504f8a9472412ef262a, type: 2}
+    - target: {fileID: 2330414025520045736, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_Name
+      value: RoulettaReal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658599011547491130, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658599011547491130, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: rouletteManager
+      value: 
+      objectReference: {fileID: 815062539}
+    - target: {fileID: 3132283743601978735, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299003242737084203, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442062776282116520, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442062776282116520, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442062776282116520, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442062776282116520, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442062776282116520, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4945949378336825960, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4945949378336825960, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4945949378336825960, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085945221019316098, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085945221019316098, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: rouletteManager
+      value: 
+      objectReference: {fileID: 815062539}
+    - target: {fileID: 6330520607496556745, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330520607496556745, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330520607496556745, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821654145174930192, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354324796347009036, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354324796347009036, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: rouletteManager
+      value: 
+      objectReference: {fileID: 815062539}
+    - target: {fileID: 8674994907537520452, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674994907537520452, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674994907537520452, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9147270286585264057, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1552034491783783330, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 385553227}
+    - targetCorrespondingSourceObject: {fileID: 7756637758726199522, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7138409878507867495}
+  m_SourcePrefab: {fileID: 100100000, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+--- !u!1 &7138409878507867494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7756637758726199522, guid: 928c292daf1a2be4fadce858ebd50ab4, type: 3}
+  m_PrefabInstance: {fileID: 7138409878507867493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7138409878507867495
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7138409878507867494}
+  m_Material: {fileID: 13400000, guid: 706c53bb393ea504f8a9472412ef262a, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1182997320370537906, guid: 9aadb74c19caf52419939de74841d018, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
