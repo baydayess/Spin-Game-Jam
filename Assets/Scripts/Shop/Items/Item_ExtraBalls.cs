@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Item_ExtraBalls : Item
 {
-    public override void BuyItem()
+    override public void BuyItem()
     {
-
+        //Balls
     }
 }

@@ -30,7 +30,8 @@ public class Slot : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         var ball = other.GetComponent<Ball>();
-        ball.select_info(color, number);
+        if(ball)
+            ball.select_info(color, number);
     }
 
     void ontriggerEnter(Collider other)

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebc7edf5b5176b49bd8329dfa482658, type: 3}
+  m_Name: Item_First12
+  m_EditorClassIdentifier: Assembly-CSharp::Item_First
+  <Sprite>k__BackingField: {fileID: 21300000, guid: b9c0484cf049dc44c8a10a8d21b6ad2a, type: 3}
+  <SpriteOutline>k__BackingField: {fileID: 21300000, guid: d46e8997c261203449ebe2dc1b789283, type: 3}
+  <Name>k__BackingField: First12
+  <Price>k__BackingField: 30
+  <Amount>k__BackingField: 1
+  Multiplier: 0

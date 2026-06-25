@@ -82,7 +82,7 @@ public class Shop: Singleton<Shop>
     public void BoughtItem(int itemID)
     {
         //DO SOMETHING WITH ITEM
-        
+        currentShopItems[itemID].BuyItem();
 
         currentShopItemButtons[itemID].enabled = false;
         currentShopItemButtons[itemID].gameObject.SetActive(false);

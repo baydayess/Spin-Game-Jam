@@ -68,7 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 17
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &523094881200898909
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 26
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &683617042355898513
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 2
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &836999090230374900
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 12
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &1164705576400540059
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 33
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &1552034491783783330
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +408,6 @@ GameObject:
   - component: {fileID: 1465817828766090892}
   - component: {fileID: 2170804809387143986}
   - component: {fileID: 3299003242737084203}
-  - component: {fileID: 8354324796347009036}
   m_Layer: 0
   m_Name: pneu
   m_TagString: Untagged
@@ -538,20 +537,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 62
   m_CollisionDetection: 1
---- !u!114 &8354324796347009036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1621046970973387624}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8c55b4859923a468a5476ee0c3a4f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpinTest
-  speed: 200
-  rouletteManager: {fileID: 0}
 --- !u!1 &1874070509466063615
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 4
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &2197448695976593268
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 8
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &2330414025520045736
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,7 +775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 19
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &2503466949625582393
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,7 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 11
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &3670624062374767483
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,7 +913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 1
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &3865469583438118368
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 32
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &4363631038880142561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 31
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &4584835768116980532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,7 +1120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 18
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &5014816823424077058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 27
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &5091864949884206323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,7 +1258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 36
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &5212696406011913269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1272,6 @@ GameObject:
   - component: {fileID: 3206520695515052489}
   - component: {fileID: 1973654609047701167}
   - component: {fileID: 3132283743601978735}
-  - component: {fileID: 2658599011547491130}
   m_Layer: 0
   m_Name: centro
   m_TagString: Untagged
@@ -1416,20 +1400,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 62
   m_CollisionDetection: 1
---- !u!114 &2658599011547491130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5212696406011913269}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8c55b4859923a468a5476ee0c3a4f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpinTest
-  speed: 200
-  rouletteManager: {fileID: 0}
 --- !u!1 &5270894543873253154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,7 +1468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 29
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &5686201681837918532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,7 +1605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 23
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &5953100611472823283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,7 +1674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 35
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &5968514519470059995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1773,7 +1743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 22
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &6179078120253703337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,7 +1812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 30
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &6380481943008648430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,7 +1881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 2
   number: 0
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &6489714199382919457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,7 +1950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 6
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &6520596382696987528
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,7 +2019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 25
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &6677097992160228215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,7 +2088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 13
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &6692817158137801695
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,7 +2157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 16
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &6842048742686498268
 GameObject:
   m_ObjectHideFlags: 0
@@ -2256,7 +2226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 5
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &7029210768159767586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2325,7 +2295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 24
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &7136650902651042185
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,7 +2364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 10
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &7283379494890468512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,7 +2433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 14
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &7535454671067185592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2532,7 +2502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 15
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &7625207157675001470
 GameObject:
   m_ObjectHideFlags: 0
@@ -2601,7 +2571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 3
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &7634794854892935457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2670,7 +2640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 20
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &7751412259926471193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,7 +2709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 0
   number: 28
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &7756637758726199522
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,7 +2891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 21
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &8623078143039735769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2990,7 +2960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 34
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &8698229848841060506
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,7 +2974,6 @@ GameObject:
   - component: {fileID: 6844190043283519643}
   - component: {fileID: 732278822088154096}
   - component: {fileID: 9147270286585264057}
-  - component: {fileID: 5085945221019316098}
   m_Layer: 0
   m_Name: pauzinhos
   m_TagString: Untagged
@@ -3133,20 +3102,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 62
   m_CollisionDetection: 1
---- !u!114 &5085945221019316098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8698229848841060506}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8c55b4859923a468a5476ee0c3a4f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpinTest
-  speed: 200
-  rouletteManager: {fileID: 0}
 --- !u!1 &8724397121754667675
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,7 +3170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 9
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}
 --- !u!1 &9074322461755686459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,4 +3239,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slot
   color: 1
   number: 7
-  roulette: {fileID: 0}
+  roulette: {fileID: 1552034491783783330}

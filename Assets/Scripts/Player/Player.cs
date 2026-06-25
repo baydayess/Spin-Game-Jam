@@ -1,14 +1,12 @@
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour, ISingleton
+public class Player : Singleton<Player>
 {
     private float current_Money;
 
-    public List<Item> Inventory {get; set;}
+    [field:SerializeField] public List<Item> Inventory {get; set;}
 
     [field: SerializeField] public ESlotColor[] numbers { get; set; }
 
