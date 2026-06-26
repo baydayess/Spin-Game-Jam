@@ -34,6 +34,9 @@ public class Player : Singleton<Player>
     [SerializeField] public GameObject textObj;
     private GameObject currentTextObj;
 
+    [SerializeField] private GameObject moneyChanged;
+    [SerializeField] private GameObject Canvas;
+
     void Start()
     {
         money_changed.AddListener(Update_Money);
@@ -75,6 +78,8 @@ public class Player : Singleton<Player>
         float moneyEarned = amount_bets[bet_index] * multiplier_bets[bet_index] * item_multiplier;
         current_Money += moneyEarned;
         currentQuota += moneyEarned;
+        GameObject text = Instantiate(moneyChanged, Canvas.transform);
+        text.GetComponent<TextMeshProUGUI>().text = "+" + moneyEarned;
         item_multiplier = 1;
         money_changed.Invoke();
     }
@@ -156,6 +161,9 @@ public class Player : Singleton<Player>
     {
         current_Money -= amount;
         currentQuota -= amount;
+        GameObject text = Instantiate(moneyChanged, Canvas.transform);
+        text.GetComponent<TextMeshProUGUI>().color = Color.red;
+        text.GetComponent<TextMeshProUGUI>().text = "-" + amount;
         money_changed.Invoke();
     }
 

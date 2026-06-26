@@ -5124,6 +5124,8 @@ MonoBehaviour:
   <CurrentRolls>k__BackingField: 3
   <currentQuota>k__BackingField: 0
   textObj: {fileID: 7800254906316159276, guid: e352ec45921113547b3e344a0305902a, type: 3}
+  moneyChanged: {fileID: 4676338969329799826, guid: afbaa869b8a67c040b49ef241b93fa1c, type: 3}
+  Canvas: {fileID: 1361065860}
 --- !u!4 &620439989
 Transform:
   m_ObjectHideFlags: 0
