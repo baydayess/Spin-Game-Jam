@@ -1428,6 +1428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caf585da7b76c704b99c6794e6794aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bet_Black
+  chip: {fileID: 8369520051217444520, guid: ea702ee8376ff434090caa4c69d2b875, type: 3}
 --- !u!65 &708010528
 BoxCollider:
   m_ObjectHideFlags: 0
