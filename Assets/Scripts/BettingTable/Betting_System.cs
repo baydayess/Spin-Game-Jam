@@ -14,6 +14,10 @@ public class Betting_System : MonoBehaviour
     public Dictionary<int, float> multiplier_bets { get; set; } = new();
     public Dictionary<int, float> amount_bets { get; set; } = new();
 
+    [SerializeField] private AudioClip[] audios;
+
+    [SerializeField] private List<AudioSource> audioPlayers;
+
     private void Start()
     {
         GameManager.Instance.OnGamePlayStateChanged.AddListener(Remove_Bets);
@@ -71,6 +75,10 @@ public class Betting_System : MonoBehaviour
 
         if(amount_bets.ContainsKey(bet_index))
         {
+            if(betting_amount != 0)
+            {
+                PlayAudio();
+            }
             amount_bets[bet_index] += betting_amount;
             if (amount_bets[bet_index] <= 0)
             {
@@ -89,6 +97,31 @@ public class Betting_System : MonoBehaviour
             amount_bets.Remove(bet_index);
             return;
         }
+        PlayAudio();
+    }
+
+    private void Update()
+    {
+        if (audioPlayers.Count > 0)
+        {
+            for(int i = 0; i< audioPlayers.Count; i++)
+            {
+                if (!audioPlayers[i].isPlaying)
+                {
+                    Destroy(audioPlayers[i]);
+                    audioPlayers.RemoveAt(i);
+                }
+            }
+        }
+    }
+
+    private void PlayAudio()
+    {
+        AudioSource audioPlayer = gameObject.AddComponent<AudioSource>();
+        audioPlayer.loop = false;
+        audioPlayer.pitch = Random.Range(0.8f, 1.2f);
+        audioPlayer.PlayOneShot(audios[Random.Range(0, audios.Length)]);
+        audioPlayers.Add(audioPlayer);
     }
 
     public bool bet_reds(ESlotColor color, int number)

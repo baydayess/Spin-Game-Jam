@@ -11,7 +11,12 @@ public class SpinTest : MonoBehaviour
     [SerializeField] private RouletteManager rouletteManager;
 
     private bool stoped = false;
-    
+
+
+    [SerializeField] private AudioSource audioPlayer;
+
+    [SerializeField] private AudioClip audio;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -46,6 +51,7 @@ public class SpinTest : MonoBehaviour
                 stoped = true;
             }
         }
+        audioPlayer.volume = speed / 200;
     }
 
     void Start_Roulette(EGamePlayState state)
@@ -54,5 +60,9 @@ public class SpinTest : MonoBehaviour
 
         speed = maxSpeed;
         stoped = false;
+
+        audioPlayer.clip = audio;
+        audioPlayer.volume = 1;
+        audioPlayer.Play();
     }
 }
