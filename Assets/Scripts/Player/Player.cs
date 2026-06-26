@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Player : Singleton<Player>
 {
@@ -27,6 +28,8 @@ public class Player : Singleton<Player>
     private float item_multiplier = 1;
 
     private UnityEvent money_changed = new UnityEvent();
+
+    private Outline outlineObj;
 
     void Start()
     {
@@ -75,28 +78,46 @@ public class Player : Singleton<Player>
 
     void Mouse_Select()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
 
-            if (Physics.Raycast(ray, out RaycastHit hit))
+        if (Physics.Raycast(ray, out RaycastHit hit))
+        {
+            Bet_Button button = hit.collider.GetComponent<Bet_Button>();
+            if (button != null)
             {
-                Bet_Button button = hit.collider.GetComponent<Bet_Button>();
-                if (button != null)
-                {
+                if (Mouse.current.leftButton.wasPressedThisFrame)
                     button.Press();
+            }
+
+            Outline outline = hit.collider.GetComponent<Outline>();
+            if (outline != null)
+            {
+                if (outlineObj != null && outlineObj != outline) 
+                {
+                    outlineObj.OutlineColor = Color.white;
+                    outlineObj.enabled = false;
+                }
+
+                outlineObj = outline;
+                outline.enabled = true;
+                
+                if (Mouse.current.leftButton.wasPressedThisFrame)
+                {
+                    outline.OutlineColor = Color.red;
+                }
+                else if (Mouse.current.leftButton.wasReleasedThisFrame)
+                {
+                    outline.OutlineColor = Color.white;
                 }
             }
         }
-
-        Ray rayOutline = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
-
-        if (Physics.Raycast(rayOutline, out RaycastHit hitOutline))
+        else
         {
-            Outline outline = hitOutline.collider.GetComponent<Outline>();
-            if (outline != null)
+            if (outlineObj != null)
             {
-                outline.enabled = true;
+                outlineObj.OutlineColor = Color.white;
+                outlineObj.enabled = false;
+                outlineObj = null;
             }
         }
     }
