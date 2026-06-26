@@ -6,6 +6,6 @@ public class Item_ExtraBalls : Item
 {
     override public void BuyItem()
     {
-        //Balls
+        Player.Instance.ballAmount++;
     }
 }

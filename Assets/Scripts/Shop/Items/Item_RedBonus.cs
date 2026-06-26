@@ -15,14 +15,17 @@ public class Item_RedBonus : Item
                 return;
             }
         }
-        Player.Instance.Inventory.Add(CreateInstance<Item_RedBonus>());
+
+        Item_RedBonus newItem = CreateInstance<Item_RedBonus>();
+        newItem = this;
+        Player.Instance.Inventory.Add(newItem);
     }
 
     override public float GetEffect(int number, ESlotColor color)
     {
         if (color == ESlotColor.red)
         {
-            return Mathf.Sqrt(Amount) * Multiplier;
+            return Mathf.Sqrt(Amount) * (Multiplier - 1);
         }
         return 0;
     }

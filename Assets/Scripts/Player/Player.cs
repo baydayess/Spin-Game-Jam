@@ -48,6 +48,7 @@ public class Player : Singleton<Player>
             {
                 if(bets[i][y] == value)
                 {
+                    Check_Items(value);
                     Pay_Out(i);
                     break;
                 }

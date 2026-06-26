@@ -16,14 +16,16 @@ public class Item_First : Item
             }
         }
 
-        Player.Instance.Inventory.Add(CreateInstance<Item_First>());
+        Item_First newItem = CreateInstance<Item_First>();
+        newItem = this;
+        Player.Instance.Inventory.Add(newItem);
     }
 
     override public float GetEffect(int number, ESlotColor color)
     {
         if (number <= 12 && number != 0)
         {
-            return Mathf.Sqrt(Amount) * Multiplier;
+            return Mathf.Sqrt(Amount) * (Multiplier - 1);
         }
         return 0;
     }

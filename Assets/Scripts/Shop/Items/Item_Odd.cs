@@ -15,7 +15,10 @@ public class Item_Odd : Item
                 return;
             }
         }
-        Player.Instance.Inventory.Add(CreateInstance<Item_Odd>());
+
+        Item_Odd newItem = CreateInstance<Item_Odd>();
+        newItem = this;
+        Player.Instance.Inventory.Add(newItem);
     }
 
     override public float GetEffect(int number, ESlotColor color)
@@ -24,6 +27,6 @@ public class Item_Odd : Item
         {
             return 0;
         }
-        return Mathf.Sqrt(Amount) * Multiplier;
+        return Mathf.Sqrt(Amount) * (Multiplier - 1);
     }
 }

@@ -15,14 +15,16 @@ public class Item_Even : Item
                 return;
             }
         }
-        Player.Instance.Inventory.Add(CreateInstance<Item_Even>());
+        Item_Even newItem = CreateInstance<Item_Even>();
+        newItem = this;
+        Player.Instance.Inventory.Add(newItem);
     }
 
     override public float GetEffect(int number, ESlotColor color)
     {
         if (number % 2 == 0)
         {
-            return Mathf.Sqrt(Amount) * Multiplier;
+            return Mathf.Sqrt(Amount) * (Multiplier - 1);
         }
         return 0;
     }

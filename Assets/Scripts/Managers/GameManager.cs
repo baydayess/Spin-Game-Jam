@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public enum EGameState
@@ -25,7 +26,7 @@ public class GameManager : Singleton<GameManager>
     [field:SerializeField] public EGameState GameState { get; private set; }
     private EGameState prevGameState;
     [field: SerializeField] public EGamePlayState GamePlayState { get; private set; }
-    private EGamePlayState prevGamePlayState;
+    private EGamePlayState prevGamePlayState = EGamePlayState.Shop;
 
     [SerializeField] private GameObject seeRouletteButton;
     [SerializeField] private GameObject checkShopButton;
@@ -66,9 +67,12 @@ public class GameManager : Singleton<GameManager>
         switch (state)
         {
             case EGamePlayState.BetScreen:
+                goToBetScreenButton.SetActive(false);
+                seeRouletteButton.SetActive(true);
                 if (Shop.Instance.IsShopOpen) 
-                { 
+                {
                     Shop.Instance.CloseShop();
+                    Player.Instance.ResetQuota();
                     IncreaseQuota();
                     Player.Instance.CurrentRolls = Player.Instance.maxRolls;
                     Round++;
@@ -76,13 +80,13 @@ public class GameManager : Singleton<GameManager>
                 else if(Player.Instance.CurrentRolls <= 0 && Player.Instance.currentQuota >= Quota)
                 {
                     GamePlayState = EGamePlayState.Shop;
+                    OnGamePlayStateChanged.Invoke(GamePlayState);
                 }
                 else if(Player.Instance.CurrentRolls <= 0 && Player.Instance.currentQuota <= Quota)
                 {
                     GameState = EGameState.GameOver;
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 }
-                goToBetScreenButton.SetActive(false);
-                seeRouletteButton.SetActive(true);
                 break;
             case EGamePlayState.Roulette:
                 Player.Instance.CurrentRolls--;
@@ -90,7 +94,6 @@ public class GameManager : Singleton<GameManager>
                 checkShopButton.SetActive(true);
                 break;
             case EGamePlayState.Shop:
-                Player.Instance.ResetQuota();
                 checkShopButton.SetActive(false);
                 goToBetScreenButton.SetActive(true);
                 Shop.Instance.OpenShop();
