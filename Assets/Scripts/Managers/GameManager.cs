@@ -28,8 +28,6 @@ public class GameManager : Singleton<GameManager>
     [field: SerializeField] public EGamePlayState GamePlayState { get; private set; }
     private EGamePlayState prevGamePlayState = EGamePlayState.Shop;
 
-    [SerializeField] private GameObject seeRouletteButton;
-    [SerializeField] private GameObject checkShopButton;
     [SerializeField] private GameObject goToBetScreenButton;
 
     [field: SerializeField] public int Quota { get; private set; } = 200;
@@ -41,7 +39,6 @@ public class GameManager : Singleton<GameManager>
     private void Start()
     {
         goToBetScreenButton.SetActive(false);
-        seeRouletteButton.SetActive(false);
 
         OnGamePlayStateChanged.AddListener(GamePlayStateChanged);
         OnGameStateChanged.AddListener(GameStateChanged);
@@ -68,7 +65,6 @@ public class GameManager : Singleton<GameManager>
         {
             case EGamePlayState.BetScreen:
                 goToBetScreenButton.SetActive(false);
-                seeRouletteButton.SetActive(true);
                 if (Shop.Instance.IsShopOpen) 
                 {
                     Shop.Instance.CloseShop();
@@ -90,11 +86,8 @@ public class GameManager : Singleton<GameManager>
                 break;
             case EGamePlayState.Roulette:
                 Player.Instance.CurrentRolls--;
-                seeRouletteButton.SetActive(false);
-                checkShopButton.SetActive(true);
                 break;
             case EGamePlayState.Shop:
-                checkShopButton.SetActive(false);
                 goToBetScreenButton.SetActive(true);
                 Shop.Instance.OpenShop();
                 break;
