@@ -9,14 +9,19 @@ public class Betting_System : MonoBehaviour
     public float betting_amount { get; set; } = 50;
 
     public Dictionary<int, List<int>> bets { get; set; } = new();
-    public List<float> multiplier_bets { get; set; } = new();
-    public List<float> amount_bets { get; set; } = new();
+    public Dictionary<int, float> multiplier_bets { get; set; } = new();
+    public Dictionary<int, float> amount_bets { get; set; } = new();
 
     public void add_bet(List<int> bet, float mult, int bet_index)
     {
         bets[bet_index] = bet;
-        multiplier_bets.Add(mult);
-        amount_bets.Add(betting_amount);
+        multiplier_bets[bet_index] = mult;
+        if(amount_bets.ContainsKey(bet_index))
+        {
+            amount_bets[bet_index] += betting_amount;
+            return;
+        }
+        amount_bets[bet_index] = betting_amount;
     }
 
     public bool bet_reds(ESlotColor color, int number)

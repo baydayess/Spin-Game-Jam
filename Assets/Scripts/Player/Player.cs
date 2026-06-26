@@ -1,26 +1,35 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class Player : Singleton<Player>
 {
-    private float current_Money;
+    private float current_Money = 500;
+
+    [SerializeField] TextMeshProUGUI money_text;
+
+    [field: SerializeField] public int ballAmount { get; set; } = 1;
 
     [field:SerializeField] public List<Item> Inventory {get; set;}
 
     [field: SerializeField] public ESlotColor[] numbers { get; set; }
 
     public Dictionary<int, List<int>> bets { get; set; } = new();
-    public List<float> multiplier_bets { get; set; } = new();
-    public List<float> amount_bets { get; set; } = new();
+    public Dictionary<int, float> multiplier_bets { get; set; } = new();
+    public Dictionary<int, float> amount_bets { get; set; } = new();
 
     private float item_multiplier = 1;
+
+    private UnityEvent money_changed = new UnityEvent();
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        money_changed.AddListener(Update_Money);
+        money_changed.Invoke();
     }
 
     // Update is called once per frame
@@ -29,11 +38,11 @@ public class Player : Singleton<Player>
         Mouse_Select();
     }
 
-    void Confirm_Bet(int value)
+    public void Confirm_Bet(int value)
     {
         for (int i = 0; i < bets.Count; i++)
         {
-            for (int y = 0; i < bets[i].Count; i++)
+            for (int y = 0; y < bets[i].Count; y++)
             {
                 if(bets[i][y] == value)
                 {
@@ -56,6 +65,7 @@ public class Player : Singleton<Player>
     {
         current_Money += amount_bets[bet_index] * multiplier_bets[bet_index] * item_multiplier;
         item_multiplier = 1;
+        money_changed.Invoke();
     }
 
     void Mouse_Select()
@@ -73,5 +83,16 @@ public class Player : Singleton<Player>
                 }
             }
         }
+    }
+
+    public void Remove_Money(float amount)
+    {
+        current_Money -= amount;
+        money_changed.Invoke();
+    }
+
+    private void Update_Money()
+    {
+        money_text.text = "Money: " + current_Money;
     }
 }

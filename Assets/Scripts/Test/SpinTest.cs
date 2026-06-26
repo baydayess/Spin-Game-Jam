@@ -4,8 +4,10 @@ public class SpinTest : MonoBehaviour
 {
     private Rigidbody[] rbs;
 
-    [SerializeField] private float speed = 10;
-    
+    [SerializeField] private float maxSpeed = 10;
+
+    private float speed;
+
     [SerializeField] private RouletteManager rouletteManager;
 
     private bool stoped = false;
@@ -14,6 +16,7 @@ public class SpinTest : MonoBehaviour
     void Start()
     {
         rbs = GetComponentsInChildren<Rigidbody>();
+        GameManager.Instance.OnGamePlayStateChanged.AddListener(Start_Roulette);
     }
 
     // Update is called once per frame
@@ -28,7 +31,7 @@ public class SpinTest : MonoBehaviour
     {
         if (speed > 0)
         {
-            speed -= Time.fixedDeltaTime * 50;
+            speed -= Time.fixedDeltaTime * 20;
             Quaternion deltaRotation = Quaternion.Euler(0f, 0f, speed * Time.fixedDeltaTime);
 
             foreach (Rigidbody rb in rbs)
@@ -43,5 +46,13 @@ public class SpinTest : MonoBehaviour
                 stoped = true;
             }
         }
+    }
+
+    void Start_Roulette(EGamePlayState state)
+    {
+        if (state != EGamePlayState.Roulette) return;
+
+        speed = maxSpeed;
+        stoped = false;
     }
 }

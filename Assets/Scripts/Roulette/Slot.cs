@@ -14,7 +14,8 @@ public class Slot : MonoBehaviour
 
     [SerializeField] private int number;
     
-    [SerializeField] private GameObject roulette;
+    //[SerializeField] private GameObject roulette;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -5,6 +5,8 @@ public class Bet_Black : Bet_Button
 {
     override public void Press()
     {
+        if (GameManager.Instance.GamePlayState != EGamePlayState.BetScreen) return;
+
         ESlotColor[] numbers = FindFirstObjectByType<Player>().numbers;
         Betting_System bet = FindFirstObjectByType<Betting_System>();
         List<int> final_bet = new List<int>();
