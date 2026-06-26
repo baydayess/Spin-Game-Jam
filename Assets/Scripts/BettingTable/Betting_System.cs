@@ -12,6 +12,11 @@ public class Betting_System : MonoBehaviour
     public Dictionary<int, float> multiplier_bets { get; set; } = new();
     public Dictionary<int, float> amount_bets { get; set; } = new();
 
+    private void Start()
+    {
+        GameManager.Instance.OnGamePlayStateChanged.AddListener(Remove_Bets);
+    }
+
     public void add_bet(List<int> bet, float mult, int bet_index)
     {
         bets[bet_index] = bet;
@@ -93,5 +98,14 @@ public class Betting_System : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    private void Remove_Bets(EGamePlayState state)
+    {
+        if (GameManager.Instance.GamePlayState != EGamePlayState.BetScreen) return;
+
+        bets.Clear();
+        multiplier_bets.Clear();
+        amount_bets.Clear();
     }
 }

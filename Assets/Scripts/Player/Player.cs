@@ -30,6 +30,7 @@ public class Player : Singleton<Player>
     {
         money_changed.AddListener(Update_Money);
         money_changed.Invoke();
+        GameManager.Instance.OnGamePlayStateChanged.AddListener(Remove_Bets);
     }
 
     // Update is called once per frame
@@ -94,5 +95,14 @@ public class Player : Singleton<Player>
     private void Update_Money()
     {
         money_text.text = "Money: " + current_Money;
+    }
+
+    private void Remove_Bets(EGamePlayState state)
+    {
+        if (GameManager.Instance.GamePlayState != EGamePlayState.BetScreen) return;
+
+        bets.Clear();
+        multiplier_bets.Clear();
+        amount_bets.Clear();
     }
 }
