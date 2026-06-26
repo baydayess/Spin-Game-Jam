@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Betting_System : MonoBehaviour
@@ -7,6 +8,7 @@ public class Betting_System : MonoBehaviour
 
 
     public float betting_amount { get; set; } = 50;
+    [field:SerializeField] public TextMeshProUGUI betAmountText { get; set; }
 
     public Dictionary<int, List<int>> bets { get; set; } = new();
     public Dictionary<int, float> multiplier_bets { get; set; } = new();
@@ -15,6 +17,24 @@ public class Betting_System : MonoBehaviour
     private void Start()
     {
         GameManager.Instance.OnGamePlayStateChanged.AddListener(Remove_Bets);
+    }
+
+    public void AddBetAmount(int amount)
+    {
+        betting_amount += amount;
+        betAmountText.text = betting_amount.ToString();
+    }
+
+    public void AllInBet()
+    {
+        betting_amount = Player.Instance.Check_Money();
+        betAmountText.text = betting_amount.ToString();
+    }
+
+    public void ClearBet()
+    {
+        betting_amount = 0;
+        betAmountText.text = betting_amount.ToString();
     }
 
     public void add_bet(List<int> bet, float mult, int bet_index)
