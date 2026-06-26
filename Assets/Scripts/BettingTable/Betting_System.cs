@@ -56,6 +56,7 @@ public class Betting_System : MonoBehaviour
             return;
         }
         amount_bets[bet_index] = betting_amount;
+        betAmountText.text = betting_amount.ToString();
     }
 
     public bool bet_reds(ESlotColor color, int number)
