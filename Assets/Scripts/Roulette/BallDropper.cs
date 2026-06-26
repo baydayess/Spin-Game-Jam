@@ -41,6 +41,7 @@ public class BallDropper : MonoBehaviour
 
     void Drop_Ball()
     {
+        if (GameManager.Instance.GamePlayState != EGamePlayState.Roulette) return;
         GameObject newBall = Instantiate(ball);
         newBall.transform.position = transform.position;
     }
