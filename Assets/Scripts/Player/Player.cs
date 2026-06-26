@@ -88,6 +88,17 @@ public class Player : Singleton<Player>
                 }
             }
         }
+
+        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+
+        if (Physics.Raycast(ray, out RaycastHit hit))
+        {
+            Outline outline = hit.collider.GetComponent<Outline>();
+            if (outline != null)
+            {
+                outline.enabled = true;
+            }
+        }
     }
 
     public void Remove_Money(float amount)

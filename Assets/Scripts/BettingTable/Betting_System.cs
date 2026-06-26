@@ -22,7 +22,19 @@ public class Betting_System : MonoBehaviour
 
     public void AddBetAmount(int amount)
     {
-        if (amount > Player.Instance.current_Money) return;
+        float amountBetted = 0;
+        foreach (var amountbet in amount_bets)
+        {
+            amountBetted += amountbet.Value;
+        }
+        amountBetted += betting_amount;
+
+        if (amountBetted > Player.Instance.current_Money) 
+        {
+            AllInBet();
+            return;
+        }
+        
         betting_amount += amount;
         betAmountText.text = betting_amount.ToString();
     }
