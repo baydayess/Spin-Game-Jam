@@ -19,6 +19,15 @@ public class Betting_System : MonoBehaviour
 
     public void add_bet(List<int> bet, float mult, int bet_index)
     {
+        float amountBetted = 0;
+        foreach (var amountbet in amount_bets)
+        {
+            amountBetted += amountbet.Value;
+        }
+        amountBetted += betting_amount;
+        if (amountBetted > Player.Instance.current_Money) return;
+
+
         bets[bet_index] = bet;
         multiplier_bets[bet_index] = mult;
         if(amount_bets.ContainsKey(bet_index))

@@ -6,9 +6,9 @@ using UnityEngine.InputSystem;
 
 public class Player : Singleton<Player>
 {
-    private float current_Money = 500;
+    [field: SerializeField] public float current_Money { get; private set; } = 500;
 
-    [SerializeField] TextMeshProUGUI money_text;
+    [field: SerializeField] public TextMeshProUGUI money_text { get;  set; }
 
     [field: SerializeField] public int ballAmount { get; set; } = 1;
 
