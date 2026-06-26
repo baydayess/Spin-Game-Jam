@@ -73,9 +73,9 @@ public class GameManager : Singleton<GameManager>
                 {
                     Shop.Instance.CloseShop();
                     Player.Instance.ResetQuota();
+                    Round++;
                     IncreaseQuota();
                     Player.Instance.CurrentRolls = Player.Instance.maxRolls;
-                    Round++;
                 }
                 else if(Player.Instance.CurrentRolls <= 0 && Player.Instance.currentQuota >= Quota)
                 {
@@ -103,7 +103,7 @@ public class GameManager : Singleton<GameManager>
 
     private void IncreaseQuota()
     {
-        Quota = (int) (200 + (500 * Round * Mathf.Pow(Random.Range(0.8f, 0.5f), Round - 1)));
+        Quota = (int) (200 + (1000 * Round * Mathf.Pow(Random.Range(1f, 2f), Round)));
     }
 
     private void GameStateChanged(EGameState state)
