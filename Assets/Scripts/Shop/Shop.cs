@@ -82,8 +82,10 @@ public class Shop: Singleton<Shop>
     public void BoughtItem(int itemID)
     {
         //DO SOMETHING WITH ITEM
-        currentShopItems[itemID].BuyItem();
+        if (Player.Instance.Check_Money() < currentShopItems[itemID].Price) { return; }
 
+        Player.Instance.Remove_Money(currentShopItems[itemID].Price);
+        currentShopItems[itemID].BuyItem();
         currentShopItemButtons[itemID].enabled = false;
         currentShopItemButtons[itemID].gameObject.SetActive(false);
     }

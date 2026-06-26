@@ -1,14 +1,16 @@
 using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public enum EGameState
 {
     MainMenu,
-    Pause,
-    Gameplay
+    Gameplay,
+    GameOver
 }
 
 public enum EGamePlayState
@@ -29,6 +31,9 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private GameObject checkShopButton;
     [SerializeField] private GameObject goToBetScreenButton;
 
+    [field: SerializeField] public int Quota { get; private set; } = 200;
+    [field: SerializeField] public int Round { get; private set; } = 0;
+
     public UnityEvent<EGamePlayState> OnGamePlayStateChanged { get; set; } = new UnityEvent<EGamePlayState>();
     public UnityEvent<EGameState> OnGameStateChanged { get; set; } = new UnityEvent<EGameState>();
 
@@ -37,8 +42,6 @@ public class GameManager : Singleton<GameManager>
         goToBetScreenButton.SetActive(false);
         seeRouletteButton.SetActive(false);
 
-        prevGamePlayState = GamePlayState;
-        prevGameState = GameState;
         OnGamePlayStateChanged.AddListener(GamePlayStateChanged);
         OnGameStateChanged.AddListener(GameStateChanged);
     }
@@ -63,20 +66,41 @@ public class GameManager : Singleton<GameManager>
         switch (state)
         {
             case EGamePlayState.BetScreen:
-                Shop.Instance.CloseShop();
+                if (Shop.Instance.IsShopOpen) 
+                { 
+                    Shop.Instance.CloseShop();
+                    IncreaseQuota();
+                    Player.Instance.CurrentRolls = Player.Instance.maxRolls;
+                    Round++;
+                }
+                else if(Player.Instance.CurrentRolls <= 0 && Player.Instance.currentQuota >= Quota)
+                {
+                    GamePlayState = EGamePlayState.Shop;
+                }
+                else if(Player.Instance.CurrentRolls <= 0 && Player.Instance.currentQuota <= Quota)
+                {
+                    GameState = EGameState.GameOver;
+                }
                 goToBetScreenButton.SetActive(false);
                 seeRouletteButton.SetActive(true);
                 break;
             case EGamePlayState.Roulette:
+                Player.Instance.CurrentRolls--;
                 seeRouletteButton.SetActive(false);
                 checkShopButton.SetActive(true);
                 break;
             case EGamePlayState.Shop:
+                Player.Instance.ResetQuota();
                 checkShopButton.SetActive(false);
                 goToBetScreenButton.SetActive(true);
                 Shop.Instance.OpenShop();
                 break;
         }
+    }
+
+    private void IncreaseQuota()
+    {
+        Quota = (int) (200 + (500 * Round * Mathf.Pow(Random.Range(0.8f, 0.5f), Round - 1)));
     }
 
     private void GameStateChanged(EGameState state)
@@ -87,7 +111,7 @@ public class GameManager : Singleton<GameManager>
                 break;
             case EGameState.Gameplay:
                 break;
-            case EGameState.Pause:
+            case EGameState.GameOver:
                 break;
         }
     }

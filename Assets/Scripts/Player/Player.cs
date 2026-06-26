@@ -15,6 +15,10 @@ public class Player : Singleton<Player>
     [field:SerializeField] public List<Item> Inventory {get; set;}
 
     [field: SerializeField] public ESlotColor[] numbers { get; set; }
+    [field: SerializeField] public int maxRolls { get; private set; } = 3;
+    [field: SerializeField] public int CurrentRolls { get; set; } = 3;
+
+    [field: SerializeField] public float currentQuota { get; private set; } = 0;
 
     public Dictionary<int, List<int>> bets { get; set; } = new();
     public Dictionary<int, float> multiplier_bets { get; set; } = new();
@@ -24,15 +28,12 @@ public class Player : Singleton<Player>
 
     private UnityEvent money_changed = new UnityEvent();
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         money_changed.AddListener(Update_Money);
         money_changed.Invoke();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         Mouse_Select();
@@ -63,7 +64,9 @@ public class Player : Singleton<Player>
 
     void Pay_Out(int bet_index)
     {
-        current_Money += amount_bets[bet_index] * multiplier_bets[bet_index] * item_multiplier;
+        float moneyEarned = amount_bets[bet_index] * multiplier_bets[bet_index] * item_multiplier;
+        current_Money += moneyEarned;
+        currentQuota += moneyEarned;
         item_multiplier = 1;
         money_changed.Invoke();
     }
@@ -88,11 +91,22 @@ public class Player : Singleton<Player>
     public void Remove_Money(float amount)
     {
         current_Money -= amount;
+        currentQuota -= amount;
         money_changed.Invoke();
+    }
+
+    public float Check_Money()
+    {
+        return current_Money;
     }
 
     private void Update_Money()
     {
         money_text.text = "Money: " + current_Money;
+    }
+
+    public void ResetQuota()
+    {
+        currentQuota = 0;
     }
 }
