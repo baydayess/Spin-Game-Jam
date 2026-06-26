@@ -89,11 +89,11 @@ public class Player : Singleton<Player>
             }
         }
 
-        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        Ray rayOutline = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
 
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        if (Physics.Raycast(rayOutline, out RaycastHit hitOutline))
         {
-            Outline outline = hit.collider.GetComponent<Outline>();
+            Outline outline = hitOutline.collider.GetComponent<Outline>();
             if (outline != null)
             {
                 outline.enabled = true;
