@@ -33,6 +33,10 @@ public class Bet_Black : Bet_Button
         {
             PlaceChips(bet.amount_bets[0]);
         }
+        else
+        {
+            ClearChips(EGamePlayState.BetScreen);
+        }
     }
 
     private void PlaceChips(float amount)
@@ -40,6 +44,16 @@ public class Bet_Black : Bet_Button
         int number = (int)amount / 50;
 
         number -= Chips.Count;
+
+        if (number < 0){
+            while (number < 0)
+            {
+                Destroy(Chips.Peek().gameObject);
+                Chips.Pop();
+                number++;
+            }
+            return;
+        }
 
         if(Chips.Count == 0)
         {

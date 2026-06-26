@@ -27,11 +27,15 @@ public class Betting_System : MonoBehaviour
         {
             amountBetted += amountbet.Value;
         }
-        amountBetted += betting_amount;
-
-        if (amountBetted > Player.Instance.current_Money) 
+        float finalBet = amountBetted + betting_amount + amount;
+        if (amount < 0)
         {
-            AllInBet();
+            finalBet = amount;
+        }
+        if (finalBet > Player.Instance.current_Money) 
+        {
+            betting_amount = Player.Instance.current_Money - amountBetted;
+            betAmountText.text = betting_amount.ToString();
             return;
         }
         
@@ -64,12 +68,27 @@ public class Betting_System : MonoBehaviour
 
         bets[bet_index] = bet;
         multiplier_bets[bet_index] = mult;
+
         if(amount_bets.ContainsKey(bet_index))
         {
             amount_bets[bet_index] += betting_amount;
+            if (amount_bets[bet_index] <= 0)
+            {
+                bets.Remove(bet_index);
+                multiplier_bets.Remove(bet_index);
+                amount_bets.Remove(bet_index);
+                return;
+            }
             return;
         }
         amount_bets[bet_index] = betting_amount;
+        if (amount_bets[bet_index] <= 0)
+        {
+            bets.Remove(bet_index);
+            multiplier_bets.Remove(bet_index);
+            amount_bets.Remove(bet_index);
+            return;
+        }
     }
 
     public bool bet_reds(ESlotColor color, int number)

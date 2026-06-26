@@ -26,6 +26,10 @@ public class Bet_Number : Bet_Button
         {
             PlaceChips(bet.amount_bets[20 + number]);
         }
+        else
+        {
+            ClearChips(EGamePlayState.BetScreen);
+        }
     }
 
     private void PlaceChips(float amount)

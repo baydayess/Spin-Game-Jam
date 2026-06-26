@@ -30,6 +30,10 @@ public class Bet_Red : Bet_Button
         {
             PlaceChips(bet.amount_bets[1]);
         }
+        else
+        {
+            ClearChips(EGamePlayState.BetScreen);
+        }
     }
 
     private void PlaceChips(float amount)
