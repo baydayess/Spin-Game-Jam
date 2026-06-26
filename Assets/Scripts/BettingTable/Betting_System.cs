@@ -17,6 +17,7 @@ public class Betting_System : MonoBehaviour
     private void Start()
     {
         GameManager.Instance.OnGamePlayStateChanged.AddListener(Remove_Bets);
+        betAmountText.text = betting_amount.ToString();
     }
 
     public void AddBetAmount(int amount)
@@ -57,7 +58,6 @@ public class Betting_System : MonoBehaviour
             return;
         }
         amount_bets[bet_index] = betting_amount;
-        betAmountText.text = betting_amount.ToString();
     }
 
     public bool bet_reds(ESlotColor color, int number)
