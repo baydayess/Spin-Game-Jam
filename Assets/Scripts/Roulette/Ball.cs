@@ -17,7 +17,7 @@ public class Ball : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddForceAtPosition(new Vector3(Random.Range(1, -1), 0, Random.Range(1, -1)) * 20, transform.position);
+        rb.AddForceAtPosition(new Vector3(Random.Range(1, -1), 0, Random.Range(1, -1)) * 90, transform.position);
     }
 
     // Update is called once per frame

@@ -59,7 +59,7 @@ public class Player : Singleton<Player>
     {
         foreach (Item item in Inventory)
         {
-            //item_multiplier += item.GetEffect(number, numbers[number])
+            item_multiplier += item.GetEffect(number, numbers[number]);
         }
     }
 
