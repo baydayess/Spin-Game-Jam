@@ -104,6 +104,12 @@ public class Betting_System : MonoBehaviour
         PlayAudio();
     }
 
+    public float GetMyBet(int bet_index)
+    {
+        if (amount_bets.ContainsKey(bet_index)) return amount_bets[bet_index];
+        return 0;
+    }
+
     private void Update()
     {
         if (audioPlayers.Count > 0)

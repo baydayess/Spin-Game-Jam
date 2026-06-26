@@ -31,6 +31,9 @@ public class Player : Singleton<Player>
 
     private Outline outlineObj;
 
+    [SerializeField] public GameObject textObj;
+    private GameObject currentTextObj;
+
     void Start()
     {
         money_changed.AddListener(Update_Money);
@@ -85,8 +88,22 @@ public class Player : Singleton<Player>
             Bet_Button button = hit.collider.GetComponent<Bet_Button>();
             if (button != null)
             {
+                if (!currentTextObj)
+                {
+                    float amount = button.Return_Bet();
+                    if (amount > 0)
+                    {
+                        currentTextObj = Instantiate(textObj);
+                        currentTextObj.GetComponent<Bet_Text>().amount = amount;
+                        currentTextObj.transform.position = button.transform.position;
+                    }
+                }
                 if (Mouse.current.leftButton.wasPressedThisFrame)
                     button.Press();
+            }
+            else
+            {
+                if (currentTextObj) Destroy(currentTextObj.gameObject);
             }
 
             Outline outline = hit.collider.GetComponent<Outline>();
@@ -96,6 +113,7 @@ public class Player : Singleton<Player>
                 {
                     outlineObj.OutlineColor = Color.white;
                     outlineObj.enabled = false;
+                    if (currentTextObj) Destroy(currentTextObj.gameObject);
                 }
 
                 outlineObj = outline;
@@ -104,15 +122,27 @@ public class Player : Singleton<Player>
                 if (Mouse.current.leftButton.wasPressedThisFrame)
                 {
                     outline.OutlineColor = Color.red;
+                    if (currentTextObj) Destroy(currentTextObj.gameObject);
                 }
                 else if (Mouse.current.leftButton.wasReleasedThisFrame)
                 {
                     outline.OutlineColor = Color.white;
+                    if (!currentTextObj)
+                    {
+                        float amount = button.Return_Bet();
+                        if (amount > 0)
+                        {
+                            currentTextObj = Instantiate(textObj);
+                            currentTextObj.GetComponent<Bet_Text>().amount = amount;
+                            currentTextObj.transform.position = button.transform.position;
+                        }
+                    }
                 }
             }
         }
         else
         {
+            if (currentTextObj) Destroy(currentTextObj.gameObject);
             if (outlineObj != null)
             {
                 outlineObj.OutlineColor = Color.white;

@@ -444,10 +444,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   <GameState>k__BackingField: 2
   <GamePlayState>k__BackingField: 0
-  seeRouletteButton: {fileID: 0}
-  checkShopButton: {fileID: 0}
   goToBetScreenButton: {fileID: 0}
   <Quota>k__BackingField: 200
+  quotaText: {fileID: 0}
+  currentQuotaText: {fileID: 0}
   <Round>k__BackingField: 0
 --- !u!4 &269027036
 Transform:
@@ -3899,6 +3899,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b119c2bc5d542742bc0e475d1d13aad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Betting_System
+  <betAmountText>k__BackingField: {fileID: 0}
+  audios: []
+  audioPlayers: []
 --- !u!4 &2101238225
 Transform:
   m_ObjectHideFlags: 0

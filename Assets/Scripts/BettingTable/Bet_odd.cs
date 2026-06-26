@@ -62,6 +62,9 @@ public class Bet_odd : Bet_Button
             Chips.Push(newChip);
             number -= 1;
         }
+
+        if (number > 5000) number = 5000;
+
         for (int i = 0; i < number; i++)
         {
             GameObject newChip = Instantiate(chip);
@@ -81,5 +84,11 @@ public class Bet_odd : Bet_Button
             Destroy(Chips.Peek().gameObject);
             Chips.Pop();
         }
+    }
+
+    override public float Return_Bet()
+    { 
+        Betting_System bet = FindFirstObjectByType<Betting_System>();
+        return bet.GetMyBet(3);
     }
 }
