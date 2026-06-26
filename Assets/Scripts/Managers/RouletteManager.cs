@@ -46,6 +46,7 @@ public class RouletteManager : MonoBehaviour
             Destroy(ball.gameObject);
         }
         finished = false;
+        GameManager.Instance.ChangeGamePlayState((int) EGamePlayState.BetScreen);
     }
 
     bool Check_Balls()

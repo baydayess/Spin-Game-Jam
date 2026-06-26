@@ -85,4 +85,13 @@ public class Betting_System : MonoBehaviour
         }
         return false;
     }
+
+    public bool bet_number(ESlotColor color, int number)
+    {
+        if (number is > 24 and <= 36)
+        {
+            return true;
+        }
+        return false;
+    }
 }
