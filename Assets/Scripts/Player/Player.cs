@@ -42,14 +42,14 @@ public class Player : Singleton<Player>
 
     public void Confirm_Bet(int value)
     {
-        for (int i = 0; i < bets.Count; i++)
+        foreach (var bet in bets)
         {
-            for (int y = 0; y < bets[i].Count; y++)
+            for (int y = 0; y < bet.Value.Count; y++)
             {
-                if(bets[i][y] == value)
+                if(bet.Value[y] == value)
                 {
                     Check_Items(value);
-                    Pay_Out(i);
+                    Pay_Out(bet.Key);
                     break;
                 }
             }
