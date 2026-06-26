@@ -35,6 +35,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private TextMeshProUGUI quotaText;
     [SerializeField] private TextMeshProUGUI currentQuotaText;
     [field: SerializeField] public int Round { get; private set; } = 0;
+    [SerializeField] private TextMeshProUGUI roundText;
 
     public UnityEvent<EGamePlayState> OnGamePlayStateChanged { get; set; } = new UnityEvent<EGamePlayState>();
     public UnityEvent<EGameState> OnGameStateChanged { get; set; } = new UnityEvent<EGameState>();
@@ -108,6 +109,7 @@ public class GameManager : Singleton<GameManager>
     {
         Quota = (int) (200 + (1000 * Round * Mathf.Pow(Random.Range(1f, 2f), Round)));
         quotaText.text = $"{Quota}$";
+        roundText.text = $"Round {Round}$";
     }
 
     private void GameStateChanged(EGameState state)
