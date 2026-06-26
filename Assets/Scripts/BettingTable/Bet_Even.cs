@@ -42,6 +42,17 @@ public class Bet_Even : Bet_Button
 
         number -= Chips.Count;
 
+        if (number < 0)
+        {
+            while (number < 0)
+            {
+                Destroy(Chips.Peek().gameObject);
+                Chips.Pop();
+                number++;
+            }
+            return;
+        }
+
         if (Chips.Count == 0)
         {
             GameObject newChip = Instantiate(chip);
