@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -31,6 +32,8 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private GameObject goToBetScreenButton;
 
     [field: SerializeField] public int Quota { get; private set; } = 200;
+    [SerializeField] private TextMeshProUGUI quotaText;
+    [SerializeField] private TextMeshProUGUI currentQuotaText;
     [field: SerializeField] public int Round { get; private set; } = 0;
 
     public UnityEvent<EGamePlayState> OnGamePlayStateChanged { get; set; } = new UnityEvent<EGamePlayState>();
@@ -39,7 +42,7 @@ public class GameManager : Singleton<GameManager>
     private void Start()
     {
         goToBetScreenButton.SetActive(false);
-
+        quotaText.text = $"{Quota}$";
         OnGamePlayStateChanged.AddListener(GamePlayStateChanged);
         OnGameStateChanged.AddListener(GameStateChanged);
     }
@@ -65,6 +68,9 @@ public class GameManager : Singleton<GameManager>
         {
             case EGamePlayState.BetScreen:
                 goToBetScreenButton.SetActive(false);
+
+                if(Player.Instance.Check_Money() <= 0) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
                 if (Shop.Instance.IsShopOpen) 
                 {
                     Shop.Instance.CloseShop();
@@ -83,6 +89,10 @@ public class GameManager : Singleton<GameManager>
                     GameState = EGameState.GameOver;
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 }
+
+                if (Player.Instance.currentQuota >= Quota) currentQuotaText.color = Color.green;
+                else currentQuotaText.color = Color.red;
+                currentQuotaText.text = $"{Player.Instance.currentQuota}$";
                 break;
             case EGamePlayState.Roulette:
                 Player.Instance.CurrentRolls--;
@@ -97,6 +107,7 @@ public class GameManager : Singleton<GameManager>
     private void IncreaseQuota()
     {
         Quota = (int) (200 + (1000 * Round * Mathf.Pow(Random.Range(1f, 2f), Round)));
+        quotaText.text = $"{Quota}$";
     }
 
     private void GameStateChanged(EGameState state)

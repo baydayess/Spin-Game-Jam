@@ -45,4 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   <GameState>k__BackingField: 0
-  <GamePlayState>k__BackingField: 1
+  <GamePlayState>k__BackingField: 0
+  goToBetScreenButton: {fileID: 0}
+  <Quota>k__BackingField: 200
+  <Round>k__BackingField: 0

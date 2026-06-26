@@ -6,7 +6,6 @@ public class Betting_System : MonoBehaviour
 {
     [SerializeField] private Dictionary<int, ESlotColor> current_Bet;
 
-
     public float betting_amount { get; set; } = 50;
     [field:SerializeField] public TextMeshProUGUI betAmountText { get; set; }
 
@@ -49,7 +48,12 @@ public class Betting_System : MonoBehaviour
 
     public void AllInBet()
     {
-        betting_amount = Player.Instance.Check_Money();
+        float amountBetted = 0;
+        foreach (var amountbet in amount_bets)
+        {
+            amountBetted += amountbet.Value;
+        }
+        betting_amount = Player.Instance.current_Money - amountBetted;
         betAmountText.text = betting_amount.ToString();
     }
 
