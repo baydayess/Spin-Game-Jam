@@ -533,6 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb40f72341a98f04abe3865b0f0c1005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bet_First_12
+  chip: {fileID: 8369520051217444520, guid: ea702ee8376ff434090caa4c69d2b875, type: 3}
 --- !u!65 &97064729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -620,8 +621,8 @@ Transform:
   m_GameObject: {fileID: 97064727}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.38, y: 18.6, z: 4.49}
-  m_LocalScale: {x: 3.2449, y: 1, z: 1}
+  m_LocalPosition: {x: -34.9892, y: 17.64, z: 2.3123}
+  m_LocalScale: {x: 8.291652, y: 0.18867, z: 2.0086682}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1169,6 +1170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f6036651ad93247bd70df7cdfa6888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bet_Red
+  chip: {fileID: 8369520051217444520, guid: ea702ee8376ff434090caa4c69d2b875, type: 3}
 --- !u!65 &167056358
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1256,8 +1258,8 @@ Transform:
   m_GameObject: {fileID: 167056356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.55, y: 18.6, z: 0.86}
-  m_LocalScale: {x: 3.2449, y: 1, z: 1}
+  m_LocalPosition: {x: -24.2243, y: 17.64, z: -0.0707}
+  m_LocalScale: {x: 3.9201183, y: 0.18867, z: 1.9386}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1406,7 +1408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caf585da7b76c704b99c6794e6794aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bet_Black
-  chip: {fileID: 0}
+  chip: {fileID: 8369520051217444520, guid: ea702ee8376ff434090caa4c69d2b875, type: 3}
 --- !u!65 &191290201
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1494,8 +1496,8 @@ Transform:
   m_GameObject: {fileID: 191290199}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.2, y: 18.6, z: 0.86000013}
-  m_LocalScale: {x: 3.2449, y: 1, z: 1}
+  m_LocalPosition: {x: -28.5391, y: 17.64, z: -0.0132}
+  m_LocalScale: {x: 3.898288, y: 0.18867, z: 2.0694888}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1669,6 +1671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d741dcc0f6674724e95fa6ca36fda796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bet_odd
+  chip: {fileID: 8369520051217444520, guid: ea702ee8376ff434090caa4c69d2b875, type: 3}
 --- !u!65 &216177791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1756,8 +1759,8 @@ Transform:
   m_GameObject: {fileID: 216177789}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.48, y: 18.6, z: -0.5799999}
-  m_LocalScale: {x: 3.2449, y: 1, z: 1}
+  m_LocalPosition: {x: -19.9917, y: 17.64, z: -0.0753}
+  m_LocalScale: {x: 3.8879817, y: 0.18867, z: 1.942713}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3596,6 +3599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86ae5bcac9b6f442adf2284c57cdb96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bet_Even
+  chip: {fileID: 8369520051217444520, guid: ea702ee8376ff434090caa4c69d2b875, type: 3}
 --- !u!65 &822373003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3683,8 +3687,8 @@ Transform:
   m_GameObject: {fileID: 822373001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.38, y: 18.6, z: -0.5799999}
-  m_LocalScale: {x: 3.2449, y: 1, z: 1}
+  m_LocalPosition: {x: -32.8544, y: 17.64, z: -0.0651}
+  m_LocalScale: {x: 3.947359, y: 0.18867, z: 1.9802126}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4093,6 +4097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48cfaa736fe13184c804be0e78e3eee7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bet_Second_12
+  chip: {fileID: 8369520051217444520, guid: ea702ee8376ff434090caa4c69d2b875, type: 3}
 --- !u!65 &1050993809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4180,8 +4185,8 @@ Transform:
   m_GameObject: {fileID: 1050993807}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.18, y: 18.6, z: 4.49}
-  m_LocalScale: {x: 3.2449, y: 1, z: 1}
+  m_LocalPosition: {x: -26.4043, y: 17.64, z: 2.2884}
+  m_LocalScale: {x: 8.333886, y: 0.18867, z: 2.054421}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4330,6 +4335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 578f9c5134bd6c842b790e7552898c69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bet_Third_12
+  chip: {fileID: 8369520051217444520, guid: ea702ee8376ff434090caa4c69d2b875, type: 3}
 --- !u!65 &1096203475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4417,8 +4423,8 @@ Transform:
   m_GameObject: {fileID: 1096203473}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.68, y: 18.6, z: 4.49}
-  m_LocalScale: {x: 3.2449, y: 1, z: 1}
+  m_LocalPosition: {x: -17.9166, y: 17.64, z: 2.3066}
+  m_LocalScale: {x: 8.117343, y: 0.18867, z: 1.9802835}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6547,7 +6553,7 @@ Transform:
   m_GameObject: {fileID: 1622618626}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.36, y: 18.6, z: -2.48}
+  m_LocalPosition: {x: -26.36, y: 18.04, z: -2.3}
   m_LocalScale: {x: 3.2449, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7220,6 +7226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb497adb1271714ea03e4777afd3f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bet_Number
+  chip: {fileID: 8369520051217444520, guid: ea702ee8376ff434090caa4c69d2b875, type: 3}
   number: 11
 --- !u!65 &1775327285
 BoxCollider:
@@ -7308,8 +7315,8 @@ Transform:
   m_GameObject: {fileID: 1775327283}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.18, y: 18.6, z: 8.78}
-  m_LocalScale: {x: 3.2449, y: 1, z: 1}
+  m_LocalPosition: {x: -31.8025, y: 17.64, z: 8.0132}
+  m_LocalScale: {x: 1.8255541, y: 0.18867, z: 2.7175546}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

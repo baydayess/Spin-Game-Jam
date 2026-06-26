@@ -29,7 +29,10 @@ public class Bet_Black : Bet_Button
             }
         }
         bet.add_bet(final_bet, 2, 0);
-        PlaceChips(bet.amount_bets[0]);
+        if (bet.amount_bets.ContainsKey(0))
+        {
+            PlaceChips(bet.amount_bets[0]);
+        }
     }
 
     private void PlaceChips(float amount)
