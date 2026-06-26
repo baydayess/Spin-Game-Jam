@@ -21,6 +21,7 @@ public class Betting_System : MonoBehaviour
 
     public void AddBetAmount(int amount)
     {
+        if (amount > Player.Instance.current_Money) return;
         betting_amount += amount;
         betAmountText.text = betting_amount.ToString();
     }
