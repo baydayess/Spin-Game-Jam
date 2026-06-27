@@ -37,7 +37,7 @@ public class Player : Singleton<Player>
     [SerializeField] private GameObject moneyChanged;
     [SerializeField] private GameObject Canvas;
 
-    [SerializeField] private GameObject fireWorkMachine;
+    [SerializeField] private FireWorkMachine fireWorkMachine;
 
     void Start()
     {
@@ -84,6 +84,7 @@ public class Player : Singleton<Player>
         text.GetComponent<TextMeshProUGUI>().text = "+" + moneyEarned;
         item_multiplier = 1;
         money_changed.Invoke();
+        fireWorkMachine.StartFireWorks(moneyEarned);
     }
 
     void Mouse_Select()

@@ -5469,7 +5469,7 @@ MonoBehaviour:
   textObj: {fileID: 5946137740288353751, guid: 0d14a11d495599c42befffcae8c8377f, type: 3}
   moneyChanged: {fileID: 4676338969329799826, guid: afbaa869b8a67c040b49ef241b93fa1c, type: 3}
   Canvas: {fileID: 1361065860}
-  fireWorkMachine: {fileID: 897618144}
+  fireWorkMachine: {fileID: 897618145}
 --- !u!4 &620439989
 Transform:
   m_ObjectHideFlags: 0
