@@ -16,7 +16,7 @@ public class MoneyChanged : MonoBehaviour
 
         transform.position -= new Vector3(0, Time.deltaTime * 25, 0);
         Color c = mesh.color;
-        c.a -= Time.deltaTime/2;
+        c.a -= Time.deltaTime/3;
         mesh.color = c;
         if (c.a <= 0) Destroy(gameObject);
     }

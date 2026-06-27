@@ -98,9 +98,10 @@ public class Player : Singleton<Player>
                     float amount = button.Return_Bet();
                     if (amount > 0)
                     {
-                        currentTextObj = Instantiate(textObj);
+                        currentTextObj = Instantiate(textObj, hit.transform);
                         currentTextObj.GetComponent<Bet_Text>().amount = amount;
-                        currentTextObj.transform.position = button.transform.position;
+                        currentTextObj.transform.position = Vector3.zero;
+                        //currentTextObj.transform.position = button.transform.position;
                     }
                 }
                 if (Mouse.current.leftButton.wasPressedThisFrame)
@@ -137,9 +138,10 @@ public class Player : Singleton<Player>
                         float amount = button.Return_Bet();
                         if (amount > 0)
                         {
-                            currentTextObj = Instantiate(textObj);
+                            currentTextObj = Instantiate(textObj, hit.transform);
                             currentTextObj.GetComponent<Bet_Text>().amount = amount;
-                            currentTextObj.transform.position = button.transform.position;
+                            currentTextObj.transform.position = Vector3.zero;
+                            //currentTextObj.transform.position = button.transform.position;
                         }
                     }
                 }
