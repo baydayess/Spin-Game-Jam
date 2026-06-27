@@ -8,7 +8,7 @@ public class Bet_Text : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GetComponent<TextMeshPro>().text = amount.ToString();
+        GetComponent<TextMesh>().text = amount.ToString();
     }
 
     // Update is called once per frame
