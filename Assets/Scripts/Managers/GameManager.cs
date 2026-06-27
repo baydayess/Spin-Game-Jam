@@ -34,6 +34,7 @@ public class GameManager : Singleton<GameManager>
     [field: SerializeField] public int Quota { get; private set; } = 200;
     [SerializeField] private TextMeshProUGUI quotaText;
     [SerializeField] private TextMeshProUGUI currentQuotaText;
+    [SerializeField] private GameObject skipButton;
     [field: SerializeField] public int Round { get; private set; } = 0;
     [SerializeField] private TextMeshProUGUI roundText;
     [SerializeField] private TextMeshProUGUI rollsText;
@@ -43,6 +44,7 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
+        skipButton.gameObject.SetActive(false);
         goToBetScreenButton.SetActive(false);
         quotaText.text = $"{Quota}$";
         OnGamePlayStateChanged.AddListener(GamePlayStateChanged);
@@ -74,23 +76,32 @@ public class GameManager : Singleton<GameManager>
                 if(Player.Instance.Check_Money() <= 0) 
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
-                if (Shop.Instance.IsShopOpen) 
+                if (Shop.Instance.IsShopOpen)
                 {
+                    skipButton.gameObject.SetActive(false);
                     Shop.Instance.CloseShop();
                     Player.Instance.ResetQuota();
                     Round++;
                     IncreaseQuota();
                     Player.Instance.CurrentRolls = Player.Instance.MaxRolls;
                 }
-                else if(Player.Instance.CurrentRolls <= 0 && Player.Instance.currentQuota >= Quota)
+                else if (Player.Instance.CurrentRolls >= 0 && Player.Instance.currentQuota >= Quota) 
+                {
+                    skipButton.gameObject.SetActive(true);
+                }
+                else if (Player.Instance.CurrentRolls <= 0 && Player.Instance.currentQuota >= Quota)
                 {
                     GamePlayState = EGamePlayState.Shop;
                     OnGamePlayStateChanged.Invoke(GamePlayState);
                 }
-                else if(Player.Instance.CurrentRolls <= 0 && Player.Instance.currentQuota <= Quota)
+                else if (Player.Instance.CurrentRolls <= 0 && Player.Instance.currentQuota <= Quota)
                 {
                     GameState = EGameState.GameOver;
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
+                else
+                {
+                    skipButton.gameObject.SetActive(false);
                 }
 
                 if (Player.Instance.currentQuota >= Quota) currentQuotaText.color = Color.green;
@@ -110,7 +121,7 @@ public class GameManager : Singleton<GameManager>
 
     private void IncreaseQuota()
     {
-        Quota = (int) (200 + (5000 * Round * Mathf.Pow(Random.Range(1f, 2f), Round)));
+        Quota = (int) (200 + (3000 * Round * Mathf.Pow(Random.Range(1f, 2f), Round)));
         quotaText.text = $"{Quota}$";
         roundText.text = $"Round {Round + 1}";
     }

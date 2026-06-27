@@ -16,5 +16,6 @@ MonoBehaviour:
   <SpriteOutline>k__BackingField: {fileID: 21300000, guid: 407b980334d2b564aacdd85d484c4b19, type: 3}
   <Name>k__BackingField: Second12
   <Price>k__BackingField: 100
+  <NormalPrice>k__BackingField: 100
   <Amount>k__BackingField: 1
   Multiplier: 1.2

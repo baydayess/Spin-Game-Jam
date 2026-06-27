@@ -50,7 +50,7 @@ public class Shop: Singleton<Shop>
         int itemID = 0;
         foreach (Item item in currentShopItems) 
         {
-            item.SetPrice(item.Price + (1000 * GameManager.Instance.Round * Mathf.Pow(Random.Range(1f, 2f), GameManager.Instance.Round)));
+            item.SetPrice(item.Price + (100 * GameManager.Instance.Round * Mathf.Pow(Random.Range(1f, 2f), GameManager.Instance.Round)));
 
             GameObject itemObj = Instantiate(itemUIPrefab, itemsGrid.transform);
             itemObj.name = item.name;
@@ -104,5 +104,13 @@ public class Shop: Singleton<Shop>
 
         currentShopItems.Clear();
         Debug.Log("-------------- SHOP IS CLOSED --------------");
+    }
+
+    private void OnDestroy()
+    {
+        foreach (Item item in items)
+        {
+            item.SetPrice(item.NormalPrice);
+        }
     }
 }

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79a677847ce73146b3eec6b252c1043, type: 3}
   m_Name: Item_ExtraRoll
   m_EditorClassIdentifier: Assembly-CSharp::Item_ExtraRoll
-  <Sprite>k__BackingField: {fileID: 0}
-  <SpriteOutline>k__BackingField: {fileID: 0}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 747e926d91413cc4bab257b775c66d6c, type: 3}
+  <SpriteOutline>k__BackingField: {fileID: 21300000, guid: cb9deed2dd9903141ba584fdc90612ca, type: 3}
   <Name>k__BackingField: Item
   <Price>k__BackingField: 100
+  <NormalPrice>k__BackingField: 100
   <Amount>k__BackingField: 1

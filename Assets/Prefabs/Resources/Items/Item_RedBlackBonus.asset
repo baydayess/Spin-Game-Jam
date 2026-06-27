@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c2ca72923ce81846a76baa100c5b7b5, type: 3}
   m_Name: Item_RedBlackBonus
   m_EditorClassIdentifier: Assembly-CSharp::Item_RedBlackBonus
-  <Sprite>k__BackingField: {fileID: 0}
-  <SpriteOutline>k__BackingField: {fileID: 0}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 0257001a661e21148bcee1fe0c7188a2, type: 3}
+  <SpriteOutline>k__BackingField: {fileID: 21300000, guid: 303256f3d276a7346a642d9a30cd90d0, type: 3}
   <Name>k__BackingField: Item
   <Price>k__BackingField: 200
+  <NormalPrice>k__BackingField: 200
   <Amount>k__BackingField: 1
   Multiplier: 1.3

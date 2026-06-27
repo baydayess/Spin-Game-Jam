@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Item", menuName = "Scriptable Objects/Item")]
@@ -7,6 +8,7 @@ public class Item : ScriptableObject
     [field: SerializeField] public Sprite SpriteOutline { get; private set; } = null;
     [field: SerializeField] public string Name { get; private set; } = "Item";
     [field: SerializeField] public float Price { get; private set; } = 0;
+    [field: SerializeField] public float NormalPrice { get; private set; } = 0;
     [field: SerializeField] public int Amount { get; set; } = 1;
 
     public void CreateWithValue(Item item)
@@ -15,6 +17,7 @@ public class Item : ScriptableObject
         SpriteOutline = item.SpriteOutline;
         Name = item.Name;
         Price = item.Price;
+        NormalPrice = Price;
     }
 
     public void SetPrice(float newPrice)
