@@ -1,10 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
 
 public class Shop: Singleton<Shop>
 {
@@ -15,6 +13,10 @@ public class Shop: Singleton<Shop>
     [SerializeField] private List<Item> currentShopItems;
     [SerializeField] private List<Button> currentShopItemButtons;
 
+
+    [SerializeField] private AudioClip audio;
+
+    [SerializeField] private List<AudioSource> audioPlayers;
     [field:SerializeField] public bool IsShopOpen { get; private set; }
 
     private void Start()
@@ -90,6 +92,26 @@ public class Shop: Singleton<Shop>
         currentShopItems[itemID].BuyItem();
         currentShopItemButtons[itemID].enabled = false;
         currentShopItemButtons[itemID].gameObject.SetActive(false);
+
+        AudioSource audioPlayer = gameObject.AddComponent<AudioSource>();
+        audioPlayer.loop = false;
+        audioPlayer.pitch = Random.Range(0.9f, 1.1f);
+        audioPlayer.PlayOneShot(audio);
+        audioPlayers.Add(audioPlayer);
+    }
+    private void Update()
+    {
+        if (audioPlayers.Count > 0)
+        {
+            for (int i = 0; i < audioPlayers.Count; i++)
+            {
+                if (!audioPlayers[i].isPlaying)
+                {
+                    Destroy(audioPlayers[i]);
+                    audioPlayers.RemoveAt(i);
+                }
+            }
+        }
     }
 
     public void CloseShop()
