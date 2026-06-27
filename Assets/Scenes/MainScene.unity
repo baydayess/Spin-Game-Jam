@@ -7856,7 +7856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireWorkMachine
   FireWork: {fileID: 4053872376100761192, guid: 437578fccdd07554eba7053117b57e42, type: 3}
-  Chip: {fileID: 0}
+  Chip: {fileID: 5755689189227471389, guid: d0715a756d6f90346b1a13b69dbe4680, type: 3}
 --- !u!4 &897618146
 Transform:
   m_ObjectHideFlags: 0
