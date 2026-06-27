@@ -37,6 +37,8 @@ public class Player : Singleton<Player>
     [SerializeField] private GameObject moneyChanged;
     [SerializeField] private GameObject Canvas;
 
+    [SerializeField] private GameObject fireWorkMachine;
+
     void Start()
     {
         money_changed.AddListener(Update_Money);

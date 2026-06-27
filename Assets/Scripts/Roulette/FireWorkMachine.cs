@@ -3,15 +3,18 @@ using UnityEngine;
 public class FireWorkMachine : MonoBehaviour
 {
     [SerializeField ]private GameObject FireWork;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
-    void Update()
+    public void StartFireWorks(float amount)
     {
-        
+        int finalAmount = (int)amount / 100;
+
+        if(finalAmount > 1000) finalAmount = 1000;
+
+        for (int i = 0; i < finalAmount; i++)
+        {
+            GameObject spawned = Instantiate(FireWork);
+            spawned.transform.position = transform.position + new Vector3(Random.Range(-150, 150), Random.Range(-150, 150), 0);
+        }
     }
 }
