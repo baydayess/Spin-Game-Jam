@@ -16,7 +16,7 @@ public class Player : Singleton<Player>
     [field:SerializeField] public List<Item> Inventory {get; set;}
 
     [field: SerializeField] public ESlotColor[] numbers { get; set; }
-    [field: SerializeField] public int maxRolls { get; private set; } = 3;
+    [field: SerializeField] public int MaxRolls { get; set; } = 3;
     [field: SerializeField] public int CurrentRolls { get; set; } = 3;
 
     [field: SerializeField] public float currentQuota { get; private set; } = 0;

@@ -15,6 +15,6 @@ MonoBehaviour:
   <Sprite>k__BackingField: {fileID: 21300000, guid: d16c74bed109d744297eec0fa7541a21, type: 3}
   <SpriteOutline>k__BackingField: {fileID: 21300000, guid: e10919fccf72d3447b6177d0a4a5be35, type: 3}
   <Name>k__BackingField: Odd
-  <Price>k__BackingField: 100
+  <Price>k__BackingField: 150
   <Amount>k__BackingField: 3
   Multiplier: 2

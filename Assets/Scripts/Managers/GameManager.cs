@@ -36,6 +36,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private TextMeshProUGUI currentQuotaText;
     [field: SerializeField] public int Round { get; private set; } = 0;
     [SerializeField] private TextMeshProUGUI roundText;
+    [SerializeField] private TextMeshProUGUI rollsText;
 
     public UnityEvent<EGamePlayState> OnGamePlayStateChanged { get; set; } = new UnityEvent<EGamePlayState>();
     public UnityEvent<EGameState> OnGameStateChanged { get; set; } = new UnityEvent<EGameState>();
@@ -79,7 +80,7 @@ public class GameManager : Singleton<GameManager>
                     Player.Instance.ResetQuota();
                     Round++;
                     IncreaseQuota();
-                    Player.Instance.CurrentRolls = Player.Instance.maxRolls;
+                    Player.Instance.CurrentRolls = Player.Instance.MaxRolls;
                 }
                 else if(Player.Instance.CurrentRolls <= 0 && Player.Instance.currentQuota >= Quota)
                 {
@@ -95,6 +96,7 @@ public class GameManager : Singleton<GameManager>
                 if (Player.Instance.currentQuota >= Quota) currentQuotaText.color = Color.green;
                 else currentQuotaText.color = Color.red;
                 currentQuotaText.text = $"{Player.Instance.currentQuota}$";
+                rollsText.text = $"Rolls:{Player.Instance.CurrentRolls}/{Player.Instance.MaxRolls}$";
                 break;
             case EGamePlayState.Roulette:
                 Player.Instance.CurrentRolls--;
