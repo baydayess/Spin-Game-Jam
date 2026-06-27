@@ -52,14 +52,14 @@ public class GameManager : Singleton<GameManager>
     {
         if (GamePlayState != prevGamePlayState)
         {
-            prevGamePlayState = GamePlayState;
             OnGamePlayStateChanged.Invoke(GamePlayState);
+            prevGamePlayState = GamePlayState;
         }
 
         if (GameState != prevGameState)
         {
-            prevGameState = GameState;
             OnGameStateChanged.Invoke(GameState);
+            prevGameState = GameState;
         }
     }
 
