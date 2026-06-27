@@ -52,14 +52,14 @@ public class GameManager : Singleton<GameManager>
     {
         if (GamePlayState != prevGamePlayState)
         {
-            OnGamePlayStateChanged.Invoke(GamePlayState);
             prevGamePlayState = GamePlayState;
+            OnGamePlayStateChanged.Invoke(GamePlayState);
         }
 
         if (GameState != prevGameState)
         {
-            OnGameStateChanged.Invoke(GameState);
             prevGameState = GameState;
+            OnGameStateChanged.Invoke(GameState);
         }
     }
 
@@ -70,7 +70,8 @@ public class GameManager : Singleton<GameManager>
             case EGamePlayState.BetScreen:
                 goToBetScreenButton.SetActive(false);
 
-                if(Player.Instance.Check_Money() <= 0) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                if(Player.Instance.Check_Money() <= 0) 
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
                 if (Shop.Instance.IsShopOpen) 
                 {
