@@ -22023,7 +22023,7 @@ PrefabInstance:
     - target: {fileID: 4506599596806582718, guid: 7aeed954f7667aa41a7790a44fa704eb, type: 3}
       propertyPath: roundText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1019130614}
     - target: {fileID: 4506599596806582718, guid: 7aeed954f7667aa41a7790a44fa704eb, type: 3}
       propertyPath: currentQuotaText
       value: 
