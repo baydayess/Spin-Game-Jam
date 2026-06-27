@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Item_Odd", menuName = "Scriptable Objects/Item_Odd")]
-public class Item_Odd : Item
+[CreateAssetMenu(fileName = "Item_BonusAllAround", menuName = "Scriptable Objects/Item_BonusAllAround")]
+public class Item_BonusAllAround : Item
 {
     [SerializeField] private float Multiplier;
 
@@ -16,7 +16,7 @@ public class Item_Odd : Item
             }
         }
 
-        Item_Odd newItem = CreateInstance<Item_Odd>();
+        Item_BonusAllAround newItem = CreateInstance<Item_BonusAllAround>();
         newItem.CreateWithValue(this);
         newItem.Multiplier = Multiplier;
 
@@ -25,10 +25,6 @@ public class Item_Odd : Item
 
     override public float GetEffect(int number, ESlotColor color)
     {
-        if (number % 2 == 0)
-        {
-            return 0;
-        }
         return Mathf.Sqrt(Amount) * (Multiplier - 1);
     }
 }

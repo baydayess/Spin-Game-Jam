@@ -96,7 +96,7 @@ public class GameManager : Singleton<GameManager>
                 if (Player.Instance.currentQuota >= Quota) currentQuotaText.color = Color.green;
                 else currentQuotaText.color = Color.red;
                 currentQuotaText.text = $"{Player.Instance.currentQuota}$";
-                rollsText.text = $"Rolls:{Player.Instance.CurrentRolls}/{Player.Instance.MaxRolls}$";
+                rollsText.text = $"Rolls:{Player.Instance.CurrentRolls}/{Player.Instance.MaxRolls}";
                 break;
             case EGamePlayState.Roulette:
                 Player.Instance.CurrentRolls--;
@@ -110,7 +110,7 @@ public class GameManager : Singleton<GameManager>
 
     private void IncreaseQuota()
     {
-        Quota = (int) (200 + (1000 * Round * Mathf.Pow(Random.Range(1f, 2f), Round)));
+        Quota = (int) (200 + (5000 * Round * Mathf.Pow(Random.Range(1f, 2f), Round)));
         quotaText.text = $"{Quota}$";
         roundText.text = $"Round {Round + 1}";
     }

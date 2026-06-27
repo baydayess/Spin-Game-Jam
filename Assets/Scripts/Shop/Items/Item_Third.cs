@@ -17,7 +17,9 @@ public class Item_Third : Item
         }
 
         Item_Third newItem = CreateInstance<Item_Third>();
-        newItem = this;
+        newItem.CreateWithValue(this);
+        newItem.Multiplier = Multiplier;
+
         Player.Instance.Inventory.Add(newItem);
     }
 

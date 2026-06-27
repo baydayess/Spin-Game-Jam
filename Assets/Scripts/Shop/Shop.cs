@@ -50,6 +50,8 @@ public class Shop: Singleton<Shop>
         int itemID = 0;
         foreach (Item item in currentShopItems) 
         {
+            item.SetPrice(item.Price + (1000 * GameManager.Instance.Round * Mathf.Pow(Random.Range(1f, 2f), GameManager.Instance.Round)));
+
             GameObject itemObj = Instantiate(itemUIPrefab, itemsGrid.transform);
             itemObj.name = item.name;
             

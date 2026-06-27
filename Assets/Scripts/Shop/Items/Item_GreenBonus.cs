@@ -17,7 +17,8 @@ public class Item_GreenBonus : Item
         }
 
         Item_GreenBonus newItem = CreateInstance<Item_GreenBonus>();
-        newItem = this;
+        newItem.CreateWithValue(this);
+        newItem.Multiplier = Multiplier;
         Player.Instance.Inventory.Add(newItem);
     }
 

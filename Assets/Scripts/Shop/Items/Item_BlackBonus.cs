@@ -17,7 +17,8 @@ public class Item_BlackBonus : Item
         }
 
         Item_BlackBonus newItem = CreateInstance<Item_BlackBonus>();
-        newItem = this;
+        newItem.CreateWithValue(this);
+        newItem.Multiplier = Multiplier;
         Player.Instance.Inventory.Add(newItem);
     }
 

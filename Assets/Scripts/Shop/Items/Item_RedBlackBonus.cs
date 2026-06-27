@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Item_Odd", menuName = "Scriptable Objects/Item_Odd")]
-public class Item_Odd : Item
+[CreateAssetMenu(fileName = "Item_RedBlackBonus", menuName = "Scriptable Objects/Item_RedBlackBonus")]
+public class Item_RedBlackBonus : Item
 {
     [SerializeField] private float Multiplier;
 
@@ -16,7 +16,7 @@ public class Item_Odd : Item
             }
         }
 
-        Item_Odd newItem = CreateInstance<Item_Odd>();
+        Item_RedBlackBonus newItem = CreateInstance<Item_RedBlackBonus>();
         newItem.CreateWithValue(this);
         newItem.Multiplier = Multiplier;
 
@@ -25,10 +25,10 @@ public class Item_Odd : Item
 
     override public float GetEffect(int number, ESlotColor color)
     {
-        if (number % 2 == 0)
+        if (color == ESlotColor.red || color == ESlotColor.black)
         {
-            return 0;
+            return Mathf.Sqrt(Amount) * (Multiplier - 1);
         }
-        return Mathf.Sqrt(Amount) * (Multiplier - 1);
+        return 0;
     }
 }

@@ -16,7 +16,8 @@ public class Item_Even : Item
             }
         }
         Item_Even newItem = CreateInstance<Item_Even>();
-        newItem = this;
+        newItem.CreateWithValue(this);
+        newItem.Multiplier = Multiplier;
         Player.Instance.Inventory.Add(newItem);
     }
 

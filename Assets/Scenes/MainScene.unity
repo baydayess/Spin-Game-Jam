@@ -5843,7 +5843,7 @@ Transform:
   m_GameObject: {fileID: 641046502}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 30.14, y: 27.11, z: 259.47}
+  m_LocalPosition: {x: 45.62, y: 27.11, z: 259.47}
   m_LocalScale: {x: 3.6, y: 3.6, z: 3.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5903,7 +5903,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 8.67, y: 9.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7719,6 +7719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireWorkMachine
   FireWork: {fileID: 4053872376100761192, guid: 437578fccdd07554eba7053117b57e42, type: 3}
+  Chip: {fileID: 0}
 --- !u!4 &897618146
 Transform:
   m_ObjectHideFlags: 0
