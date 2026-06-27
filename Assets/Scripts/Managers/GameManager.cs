@@ -110,7 +110,7 @@ public class GameManager : Singleton<GameManager>
     {
         Quota = (int) (200 + (1000 * Round * Mathf.Pow(Random.Range(1f, 2f), Round)));
         quotaText.text = $"{Quota}$";
-        roundText.text = $"Round {Round}$";
+        roundText.text = $"Round {Round + 1}";
     }
 
     private void GameStateChanged(EGameState state)
